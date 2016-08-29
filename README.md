@@ -8,12 +8,15 @@ ENVIROMENT
 INSTALL
 =======
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
+or
+
+    pip install scrapy
 
 
 COLLECT DATA
 ============
 
-scrapy crawl creatures
+    scrapy crawl creatures
 
 This will generate several files, one per faction, in the root directory of the project.
