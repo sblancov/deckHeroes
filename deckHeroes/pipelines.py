@@ -1,17 +1,18 @@
 import json
 
+from scrapy.exporters import JsonItemExporter
+
 
 class DeckheroesPipeline(object):
 
     def __init__(self):
-
         factions = ['human', 'faen', 'neander', 'mortii']
-        self.files = {}
+        self.exporters = {}
         for i in factions:
-            self.files[i] = open('{}.json'.format(i), 'w') 
+            file_ = open('{}.json'.format(i), 'w')
+            self.exporters[i] =  JsonItemExporter(file_)
 
     def process_item(self, item, spider):
         faction = item['faction']
-        line = json.dumps(dict(item), indent=4) + ", "
-        self.files[faction].write(line)
+        self.exporters[faction].export_item(item)
         return item
