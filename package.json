@@ -1,0 +1,20 @@
+{
+  "name": "deck-heroes",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sblancov/deckHeroes.git"
+  },
+  "author": "Santiago Blanco Ventas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sblancov/deckHeroes/issues"
+  },
+  "homepage": "https://github.com/sblancov/deckHeroes#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}
