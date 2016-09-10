@@ -1,0 +1,3997 @@
+2016-08-29 20:00:33 [scrapy] INFO: Scrapy 1.0.1 started (bot: deckHeroes)
+2016-08-29 20:00:33 [scrapy] INFO: Optional features available: ssl, http11
+2016-08-29 20:00:33 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'deckHeroes.spiders', 'SPIDER_MODULES': ['deckHeroes.spiders'], 'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'deckHeroes'}
+2016-08-29 20:00:33 [py.warnings] WARNING: :0: UserWarning: You do not have a working installation of the service_identity module: 'No module named service_identity'.  Please install it from <https://pypi.python.org/pypi/service_identity> and make sure all of its dependencies are satisfied.  Without the service_identity module and a recent enough pyOpenSSL to support it, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.
+
+2016-08-29 20:00:33 [scrapy] INFO: Enabled extensions: CloseSpider, TelnetConsole, LogStats, CoreStats, SpiderState
+2016-08-29 20:00:33 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-08-29 20:00:33 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-08-29 20:00:33 [scrapy] INFO: Enabled item pipelines: DeckheroesPipeline
+2016-08-29 20:00:33 [scrapy] INFO: Spider opened
+2016-08-29 20:00:33 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-08-29 20:00:33 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-08-29 20:00:33 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Creatures> (referer: None)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hellhound> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Plague_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hellhound>
+{'attack': u'105',
+ 'cost': u'3',
+ 'faction': u'mortii',
+ 'health': u'334',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/8/8f/Hellhound_Creature_card.png/revision/latest/scale-to-width-down/210?cb=20160409165754',
+ 'name': u'hellhound',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'[d]tomb traps 2',
+ 'skill2': u'bane 3',
+ 'skill3': u'bloodlust 4',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Demonic_Templar> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Plague_Dragon>
+{'attack': u'240',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'854',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/f7/M-PlagueDragon.jpg/revision/latest/scale-to-width-down/210?cb=20150130223801',
+ 'name': u'plague dragon',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'frostbite 5',
+ 'skill2': u'bane 8',
+ 'skill3': u'death march 6',
+ 'timer': u'6'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ghostly_Judge> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Queen_Temptress> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Delilah> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lycanthrope> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/The_Puppeteer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Cave_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Demonic_Templar>
+{'attack': u'311',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'905',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/0/0b/Demonic_templar_creature_card.png/revision/latest?cb=20151111001306',
+ 'name': u'demonic templar',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'rip',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'rebirth 6',
+ 'timer': u'2'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bloody_Lord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ghostly_Judge>
+{'attack': u'310',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'852',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/69/M-GhostlyJudge.jpg/revision/latest/scale-to-width-down/210?cb=20150130223325',
+ 'name': u'ghostly judge',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'hero-killer',
+ 'skill2': u'venom edge 7',
+ 'skill3': u'reflect 5',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hell_Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Harbinger> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Queen_Temptress>
+{'attack': u'186',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'879',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/7/75/Queen_temptress.png/revision/latest/scale-to-width-down/210?cb=20151114170128',
+ 'name': u'queen temptress',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'dodge 5',
+ 'skill2': u'immunity 5',
+ 'skill3': u'osmose',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Delilah>
+{'attack': u'211',
+ 'cost': u'14',
+ 'faction': u'mortii',
+ 'health': u'866',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/38/Delilah_creature_card.png/revision/latest?cb=20160114134704',
+ 'name': u'delilah',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'discord 10',
+ 'skill2': u'dodge 7',
+ 'skill3': u'soul swap 10',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lycanthrope>
+{'attack': u'278',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'822',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a6/Lycanthrope_creature_card.png/revision/latest?cb=20151108152157',
+ 'name': u'lycanthrope',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'life sap 6',
+ 'skill2': u'battleblow 5',
+ 'skill3': u'dodge 6',
+ 'timer': u'2'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hellwolf> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/The_Puppeteer>
+{'attack': u'198',
+ 'cost': u'14',
+ 'faction': u'mortii',
+ 'health': u'623',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a9/M-ThePuppeteer.jpg/revision/latest/scale-to-width-down/210?cb=20150206203511',
+ 'name': u'the puppeteer',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'death march 7',
+ 'skill3': u'godswill 8',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Cave_Dragon>
+{'attack': u'240',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'950',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/d/dd/M-CaveDragon.jpg/revision/latest/scale-to-width-down/210?cb=20150130223043',
+ 'name': u'cave dragon',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'flaming 3',
+ 'skill2': u'rip',
+ 'skill3': u'fatigue 8',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dullahan> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bloody_Lord>
+{'attack': u'241',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'728',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/e/e2/M-BloodyLord.jpg/revision/latest/scale-to-width-down/210?cb=20150130223008',
+ 'name': u'bloody lord',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'hero-killer',
+ 'skill2': u'dodge 4',
+ 'skill3': u'soul swap 8',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Eye_of_Jonara> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pit_Lord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hell_Knight>
+{'attack': u'296',
+ 'cost': u'13',
+ 'faction': u'mortii',
+ 'health': u'934',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/a/ac/Hell_Knight.jpg/revision/latest/scale-to-width-down/210?cb=20150623061457',
+ 'name': u'hell knight',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 6',
+ 'skill2': u'unbound',
+ 'skill3': u'unholy pact 6',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Harbinger>
+{'attack': u'219',
+ 'cost': u'12',
+ 'faction': u'mortii',
+ 'health': u'721',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/6b/M-Harbinger.jpg/revision/latest/scale-to-width-down/210?cb=20150130223344',
+ 'name': u'harbinger',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'soul swap 6',
+ 'skill2': u'dodge 6',
+ 'skill3': u'rebirth 6',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Aquarius> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hellwolf>
+{'attack': u'162',
+ 'cost': u'12',
+ 'faction': u'mortii',
+ 'health': u'700',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/6/6b/HellWolf.png/revision/latest/scale-to-width-down/210?cb=20150322223807',
+ 'name': u'hellwolf',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'meteor 8',
+ 'skill2': u'death march 4',
+ 'skill3': u'instakill',
+ 'timer': u'6'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dullahan>
+{'attack': u'252',
+ 'cost': u'12',
+ 'faction': u'mortii',
+ 'health': u'850',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/a/a0/Dullahan.jpg/revision/latest/scale-to-width-down/210?cb=20150623061316',
+ 'name': u'dullahan',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'stoneskin',
+ 'skill2': u'battleblow 5',
+ 'skill3': u'rebirth 5',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Vindicator> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Eye_of_Jonara>
+{'attack': u'250',
+ 'cost': u'12',
+ 'faction': u'mortii',
+ 'health': u'882',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/89/M-EyeofJonara.jpg/revision/latest/scale-to-width-down/210?cb=20150130223236',
+ 'name': u'eye of jonara',
+ 'rating': 4,
+ 'role': u'caster',
+ 'skill1': u'assassin',
+ 'skill2': u'soul swap 6',
+ 'skill3': u'picking off 8',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sylph> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pit_Lord>
+{'attack': u'223',
+ 'cost': u'12',
+ 'faction': u'mortii',
+ 'health': u'900',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/4/46/Pit_lord_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151114151507',
+ 'name': u'pit lord',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'anti faen',
+ 'skill2': u'bane 6',
+ 'skill3': u'life sap 6',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Leo> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Columbus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Aquarius>
+{'attack': u'285',
+ 'cost': u'23',
+ 'faction': u'human',
+ 'health': u'1355',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/31/Aquarius_creature_card_ver2.png/revision/latest/scale-to-width-down/210?cb=20160218172715',
+ 'name': u'aquarius',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'frost blade 10',
+ 'skill2': u'freezing field',
+ 'skill3': u'hibernate',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Imperator> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Vindicator>
+{'attack': u'321',
+ 'cost': u'21',
+ 'faction': u'human',
+ 'health': u'1235',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/f/fb/Vindicator_backdrop.png/revision/latest/scale-to-width-down/210?cb=20160122171941',
+ 'name': u'vindicator',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'immunity 10',
+ 'skill2': u'holy shield 10',
+ 'skill3': u'vacuum bomb',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sylph>
+{'attack': u'311',
+ 'cost': u'22',
+ 'faction': u'human',
+ 'health': u'1231',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/33/Sylph.jpg/revision/latest/scale-to-width-down/210?cb=20151116233720',
+ 'name': u'sylph',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'caster',
+ 'skill2': u"thor's rage 10",
+ 'skill3': u'immunity 7',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lady_Liberty> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Leo>
+{'attack': u'360',
+ 'cost': u'20',
+ 'faction': u'human',
+ 'health': u'1122',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/6/64/Leo_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151124122529',
+ 'name': u'leo',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'unbound',
+ 'skill2': u'warlust 10',
+ 'skill3': u'roar',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Arcane_Sage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Columbus>
+{'attack': u'322',
+ 'cost': u'20',
+ 'faction': u'human',
+ 'health': u'1266',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/37/Columbus_creature_card.png/revision/latest?cb=20151119154739',
+ 'name': u'columbus',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'safeguard 9',
+ 'skill2': u'frost blade 10',
+ 'skill3': u'surge',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Cancer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:34 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Imperator>
+{'attack': u'266',
+ 'cost': u'21',
+ 'faction': u'human',
+ 'health': u'1423',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/7d/Imperator_backdrop.png/revision/latest/scale-to-width-down/227?cb=20151119172742',
+ 'name': u'imperator',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'stoneskin',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'amplify',
+ 'timer': u'4'}
+2016-08-29 20:00:34 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Azure_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lady_Liberty>
+{'attack': u'288',
+ 'cost': u'22',
+ 'faction': u'human',
+ 'health': u'998',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/1/14/Lady_Liberty_creature_card.png/revision/latest?cb=20151114094617',
+ 'name': u'lady liberty',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'sweeping blow',
+ 'skill2': u'unbound',
+ 'skill3': u'lion heart',
+ 'timer': u'2'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Shinryu> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Royal_Beastmaster> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Arcane_Sage>
+{'attack': u'352',
+ 'cost': u'20',
+ 'faction': u'human',
+ 'health': u'1086',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/50/Arcane_sage.png/revision/latest/scale-to-width-down/220?cb=20151105144845',
+ 'name': u'arcane sage',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'blaze 10',
+ 'skill2': u'sneak 9',
+ 'skill3': u'vacuum bomb',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Cancer>
+{'attack': u'301',
+ 'cost': u'21',
+ 'faction': u'human',
+ 'health': u'1302',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/b/bc/Cancer_creature_card.png/revision/latest?cb=20151110094010',
+ 'name': u'cancer',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'block 10',
+ 'skill2': u'immunity 10',
+ 'skill3': u'rancor',
+ 'timer': u'6'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Santa_Baus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Azure_Dragon>
+{'attack': u'356',
+ 'cost': u'18',
+ 'faction': u'human',
+ 'health': u'1325',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/4/48/Azure_dragon_card.png/revision/latest?cb=20151108135032',
+ 'name': u'azure dragon',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'rain dance',
+ 'skill2': u'maelstrom',
+ 'skill3': u'dragon ascension',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Kirtana> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Shinryu>
+{'attack': u'356',
+ 'cost': u'18',
+ 'faction': u'human',
+ 'health': u'1325',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/ab/Shinryu.png/revision/latest/scale-to-width-down/230?cb=20151111232111',
+ 'name': u'shinryu',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'rain dance',
+ 'skill2': u'maelstrom',
+ 'skill3': u'dragon ascension',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Angel_Prime> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Royal_Beastmaster>
+{'attack': u'453',
+ 'cost': u'22',
+ 'faction': u'human',
+ 'health': u'1226',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/f8/Beasht_mashta.png/revision/latest/scale-to-width-down/210?cb=20160408094623',
+ 'name': u'royal beastmaster',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'block 10',
+ 'skill2': u'unbound',
+ 'skill3': u'battle trance',
+ 'timer': u'2'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Mythril_Drone> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Santa_Baus>
+{'attack': u'333',
+ 'cost': u'18',
+ 'faction': u'human',
+ 'health': u'1322',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/5/5a/Santa_Baus_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160109150223',
+ 'name': u'santa baus',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'stoneskin',
+ 'skill2': u'frost armor 10',
+ 'skill3': u'merry x-mas (lvl 10)',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bewitcher> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Kirtana>
+{'attack': u'325',
+ 'cost': u'19',
+ 'faction': u'human',
+ 'health': u'975',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/a/a0/Kirtana_creature_card.png/revision/latest?cb=20151109220716',
+ 'name': u'kirtana',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'pyre 7',
+ 'skill2': u'tempest 8',
+ 'skill3': u'holy shield 10',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Angel_Prime>
+{'attack': u'375',
+ 'cost': u'16',
+ 'faction': u'human',
+ 'health': u'1080',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/32/H-AngelPrime.jpg/revision/latest/scale-to-width-down/210?cb=20150206203340',
+ 'name': u'angel prime',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'bullseye',
+ 'skill2': u'dodge 9',
+ 'skill3': u'ignite soul',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Mythril_Drone>
+{'attack': u'566',
+ 'cost': u'19',
+ 'faction': u'human',
+ 'health': u'1520',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/f0/H-MythrilDrone.jpg/revision/latest/scale-to-width-down/210?cb=20150314190738',
+ 'name': u'mythril drone',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'mythril',
+ 'skill2': u'immunity 8',
+ 'skill3': u'spellbinder 10',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bewitcher>
+{'attack': u'450',
+ 'cost': u'19',
+ 'faction': u'human',
+ 'health': u'1255',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/9/95/H-Bewitcher.jpg/revision/latest/scale-to-width-down/210?cb=20150130224337',
+ 'name': u'bewitcher',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'soul split',
+ 'skill2': u'dark clone',
+ 'skill3': u'revocation',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pontiff> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Fafnir> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Balthazar> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Archdeva> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Titania> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Great_Mystic> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pontiff>
+{'attack': u'293',
+ 'cost': u'15',
+ 'faction': u'human',
+ 'health': u'1284',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/0/0e/H-Pontiff.jpg/revision/latest/scale-to-width-down/210?cb=20141230234106',
+ 'name': u'pontiff',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'safeguard 7',
+ 'skill2': u'frost armor 4',
+ 'skill3': u'rage boost 6',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Prima_Donna> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Fafnir>
+{'attack': u'350',
+ 'cost': u'18',
+ 'faction': u'human',
+ 'health': u'1150',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/16/H-Fafnir.jpg/revision/latest/scale-to-width-down/210?cb=20141230233744',
+ 'name': u'fafnir',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'dodge 5',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'immunity 8',
+ 'timer': u'6'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Balthazar>
+{'attack': u'300',
+ 'cost': u'16',
+ 'faction': u'human',
+ 'health': u'1347',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/37/H-Balthazar.jpg/revision/latest/scale-to-width-down/210?cb=20141230233414',
+ 'name': u'balthazar',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'maji shield 7',
+ 'skill2': u'humanity 7',
+ 'skill3': u'[s]disposal',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ares> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Archdeva>
+{'attack': u'365',
+ 'cost': u'17',
+ 'faction': u'human',
+ 'health': u'1375',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b7/H-Archdeva.jpg/revision/latest/scale-to-width-down/210?cb=20141230233354',
+ 'name': u'archdeva',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'maji shield 8',
+ 'skill2': u'retreat',
+ 'skill3': u'mass heal 8',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Titania>
+{'attack': u'270',
+ 'cost': u'15',
+ 'faction': u'human',
+ 'health': u'1125',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b7/H-Titania.jpg/revision/latest/scale-to-width-down/210?cb=20141230234409',
+ 'name': u'titania',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'ambush 9',
+ 'skill2': u'chainstrike 7',
+ 'skill3': u'rebirth 7',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Mariner> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Great_Mystic>
+{'attack': u'242',
+ 'cost': u'16',
+ 'faction': u'human',
+ 'health': u'1215',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/4/44/H-GreatMystic.jpg/revision/latest/scale-to-width-down/210?cb=20141230233838',
+ 'name': u'great mystic',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'incinerate 5',
+ 'skill2': u'blaze 7',
+ 'skill3': u'revive',
+ 'timer': u'6'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Grand_Mage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Michael> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Prima_Donna>
+{'attack': u'276',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'833',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/f8/Prima_donna_creature_card.png/revision/latest?cb=20151110095902',
+ 'name': u'prima donna',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'discord 9',
+ 'skill2': u'dodge 7',
+ 'skill3': u'flurry 8',
+ 'timer': u'2'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Royal_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Chimera> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ares>
+{'attack': u'356',
+ 'cost': u'16',
+ 'faction': u'human',
+ 'health': u'1206',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/c/cb/H-Ares.jpg/revision/latest/scale-to-width-down/210?cb=20150130224318',
+ 'name': u'ares',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'reflect 7',
+ 'skill2': u'dodge 8',
+ 'skill3': u'bloodlust 7',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Mariner>
+{'attack': u'235',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'1012',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/a7/Mariner_creature_card.png/revision/latest?cb=20151112011158',
+ 'name': u'mariner',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'frost bite 5',
+ 'skill2': u'frost armor 6',
+ 'skill3': u'soul reap 6',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dame_Coldfire> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Grand_Mage>
+{'attack': u'250',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'920',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/76/H-GrandMage.jpg/revision/latest/scale-to-width-down/210?cb=20141230233828',
+ 'name': u'grand mage',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'stoneskin',
+ 'skill2': u'reflect 4',
+ 'skill3': u'mass heal 5',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Arcane_Master> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Michael>
+{'attack': u'312',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'795',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/ce/Michael_creature_card.png/revision/latest?cb=20151110100124',
+ 'name': u'michael',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'bullseye',
+ 'skill2': u'warlust 8',
+ 'skill3': u'holy shield 7',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Griffi-Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Royal_Dragon>
+{'attack': u'260',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'900',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/5/5e/H-RoyalDragon.jpg/revision/latest/scale-to-width-down/210?cb=20141230234154',
+ 'name': u'royal dragon',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 4',
+ 'skill2': u'stoneskin',
+ 'skill3': u'sage advice 6',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Chimera>
+{'attack': u'248',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'1028',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/2/2b/H-Manticore.jpg/revision/latest/scale-to-width-down/210?cb=20150307172509',
+ 'name': u'manticore',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'dispel 6',
+ 'skill2': u'maji shield 8',
+ 'skill3': u'atom flare 7',
+ 'timer': u'2'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Swordmaster> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Oracle> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dame_Coldfire>
+{'attack': u'273',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'863',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/a/aa/H-DameColdfire.jpg/revision/latest/scale-to-width-down/210?cb=20150206203358',
+ 'name': u'dame coldfire',
+ 'rating': 4,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'ice arrow 7',
+ 'skill3': u'pyre 5',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Royal_Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Arcane_Master>
+{'attack': u'220',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'820',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/e/e3/H-ArcaneMaster.jpg/revision/latest/scale-to-width-down/210?cb=20141230233343',
+ 'name': u'arcane master',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'dodge 2',
+ 'skill2': u'[s]retreat',
+ 'skill3': u'fatigue 6',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Techno-Chief> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Paragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:35 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Griffi-Knight>
+{'attack': u'240',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'840',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/c/c5/H-Griffi-Knight.jpg/revision/latest/scale-to-width-down/210?cb=20141230233850',
+ 'name': u'griffi-knight',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'maji shield 5',
+ 'skill2': u'humanity 5',
+ 'skill3': u'incinerate 8',
+ 'timer': u'4'}
+2016-08-29 20:00:35 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Seraph> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Swordmaster>
+{'attack': u'147',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'855',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/e/e5/H-Swordmaster.jpg/revision/latest/scale-to-width-down/210?cb=20141230234329',
+ 'name': u'swordmaster',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'frost armor 3',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'maji shield 6',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Oracle>
+{'attack': u'175',
+ 'cost': u'14',
+ 'faction': u'human',
+ 'health': u'800',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/16/H-Oracle.jpg/revision/latest/scale-to-width-down/210?cb=20141230233951',
+ 'name': u'oracle',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'bless 10',
+ 'skill2': u'mass heal 6',
+ 'skill3': u'sage advice 7',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Royal_Dancer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Royal_Knight>
+{'attack': u'235',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'880',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/f0/H-RoyalKnight.jpg/revision/latest/scale-to-width-down/210?cb=20141230234220',
+ 'name': u'royal knight',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'block 7',
+ 'skill2': u'battleblow 5',
+ 'skill3': u'humanity 6',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Border_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Techno-Chief>
+{'attack': u'230',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'1050',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/8/83/H-Techno-Chief.jpg/revision/latest/scale-to-width-down/210?cb=20141230234342',
+ 'name': u'techno-chief',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'sage advice 4',
+ 'skill2': u'bloodlust 3',
+ 'skill3': u'sweeping blow',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Paragon>
+{'attack': u'450',
+ 'cost': u'19',
+ 'faction': u'human',
+ 'health': u'1355',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/2/26/H-Paragon-5-star.jpg/revision/latest/scale-to-width-down/210?cb=20150130224410',
+ 'name': u'paragon',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'sage advice 10',
+ 'skill2': u'delay 3',
+ 'skill3': u'torment',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Seraph>
+{'attack': u'281',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'1043',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/1/1b/H-Seraph.jpg/revision/latest/scale-to-width-down/210?cb=20141230234317',
+ 'name': u'seraph',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'anger 7',
+ 'skill2': u'restoration 6',
+ 'skill3': u'unbound',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Royal_Dancer>
+{'attack': u'215',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'840',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/f5/H-RoyalDancer.jpg/revision/latest/scale-to-width-down/210?cb=20141230234143',
+ 'name': u'royal dancer',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'sneak 5',
+ 'skill2': u'pursuit 5',
+ 'skill3': u'flurry 8',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sentry_Angel> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Cleric> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Border_Guard>
+{'attack': u'260',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'1100',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/a8/H-BorderGuard.jpg/revision/latest/scale-to-width-down/210?cb=20141230233437',
+ 'name': u'border guard',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'stoneskin',
+ 'skill2': u'consecrate 6',
+ 'skill3': u'reflect 6',
+ 'timer': u'6'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Arcane_Hunter> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Icy_Mage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Colossus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Paladin> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Juggernaut> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Archmage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sentry_Angel>
+{'attack': u'233',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'780',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/c/c8/H-SentryAngel.jpg/revision/latest/scale-to-width-down/210?cb=20141230234306',
+ 'name': u'sentry angel',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'consecrate 6',
+ 'skill2': u'restoration 7',
+ 'skill3': u'frost armor 5',
+ 'timer': u'6'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Royal_Griffin> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Cleric>
+{'attack': u'181',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'655',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/e/e6/H-Cleric.jpg/revision/latest/scale-to-width-down/210?cb=20141230233459',
+ 'name': u'cleric',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'counter 4',
+ 'skill2': u'mass heal 4',
+ 'skill3': u'humanity 7',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Arcane_Hunter>
+{'attack': u'260',
+ 'cost': u'13',
+ 'faction': u'human',
+ 'health': u'815',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/bf/H-ArcaneHunter.jpg/revision/latest/scale-to-width-down/210?cb=20141230233327',
+ 'name': u'arcane hunter',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 4',
+ 'skill2': u'ambush 7',
+ 'skill3': u'dodge 8',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Devotee> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Icy_Mage>
+{'attack': u'136',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'550',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/e/e2/H-IcyMage.jpg/revision/latest/scale-to-width-down/210?cb=20141230233903',
+ 'name': u'icy mage',
+ 'rating': 4,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'frostbite 3',
+ 'skill3': u'[s]typhoon 4',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Colossus>
+{'attack': u'236',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'1260',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/b3/H-Colossus.jpg/revision/latest/scale-to-width-down/210?cb=20141230233515',
+ 'name': u'colossus',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'restoration 5',
+ 'skill2': u'immunity 5',
+ 'skill3': u'bloodrage 7',
+ 'timer': u'6'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Paladin>
+{'attack': u'293',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'857',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/8/80/H-Paladin.jpg/revision/latest/scale-to-width-down/210?cb=20141230234003',
+ 'name': u'paladin',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'ambush 6',
+ 'skill2': u'anger 8',
+ 'skill3': u'bullseye',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Juggernaut>
+{'attack': u'296',
+ 'cost': u'12',
+ 'faction': u'human',
+ 'health': u'997',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/c/cd/H-Juggernaut.jpg/revision/latest/scale-to-width-down/210?cb=20141230233913',
+ 'name': u'juggernaut',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'anger 4',
+ 'skill2': u'reflect 4',
+ 'skill3': u'restoration 7',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Phantom_Rogue> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Archmage>
+{'attack': u'211',
+ 'cost': u'11',
+ 'faction': u'human',
+ 'health': u'630',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/bd/H-Archmage.jpg/revision/latest/scale-to-width-down/210?cb=20141230233404',
+ 'name': u'archmage',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'cloudburst 5',
+ 'skill2': u'stabthrough 5',
+ 'skill3': u'consecrate 6',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Royal_Griffin>
+{'attack': u'182',
+ 'cost': u'11',
+ 'faction': u'human',
+ 'health': u'585',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/d/de/H-RoyalGriffin.jpg/revision/latest/scale-to-width-down/210?cb=20141230234205',
+ 'name': u'royal griffin',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'[s]thunderbolt 2',
+ 'skill2': u'rebirth 2',
+ 'skill3': u'reflect 3',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pious_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Devotee>
+{'attack': u'181',
+ 'cost': u'10',
+ 'faction': u'human',
+ 'health': u'676',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/4/4c/H-Devotee.jpg/revision/latest/scale-to-width-down/210?cb=20141230233559',
+ 'name': u'devotee',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'bless 6',
+ 'skill2': u'consecrate 5',
+ 'skill3': u'sage advice 6',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flame_Mage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flame_Witch> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Empire_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Phantom_Rogue>
+{'attack': u'198',
+ 'cost': u'8',
+ 'faction': u'human',
+ 'health': u'785',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/15/H-PhantomRogue.jpg/revision/latest/scale-to-width-down/210?cb=20141230234029',
+ 'name': u'phantom rogue',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'assasinate 3',
+ 'skill2': u'dodge 4',
+ 'skill3': u'battleblow 4',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pious_Warden>
+{'attack': u'235',
+ 'cost': u'9',
+ 'faction': u'human',
+ 'health': u'666',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/f/f6/H-PiousWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230234052',
+ 'name': u'pious warden',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'weakness 5',
+ 'skill2': u'reflect 3',
+ 'skill3': u'consecrate 5',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Divine_Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flame_Mage>
+{'attack': u'154',
+ 'cost': u'9',
+ 'faction': u'human',
+ 'health': u'558',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/c1/H-FlameMage.jpg/revision/latest/scale-to-width-down/210?cb=20141230233801',
+ 'name': u'flame mage',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'incinerate 4',
+ 'skill2': u'[s]wild pyre 4',
+ 'skill3': u'cloudburst 6',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Border_Ranger> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Creatureinal> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flame_Witch>
+{'attack': u'158',
+ 'cost': u'6',
+ 'faction': u'human',
+ 'health': u'555',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/2/28/H-FlameWitch.jpg/revision/latest/scale-to-width-down/210?cb=20141230233815',
+ 'name': u'flame witch',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'meteor 2',
+ 'skill2': u'blaze 2',
+ 'skill3': u'incinerate 5',
+ 'timer': u'1'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Vicar> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Empire_Guard>
+{'attack': u'205',
+ 'cost': u'9',
+ 'faction': u'human',
+ 'health': u'623',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/bf/H-EmpireGuard.jpg/revision/latest/scale-to-width-down/210?cb=20141230233731',
+ 'name': u'empire guard',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 5',
+ 'skill2': u'reflect 3',
+ 'skill3': u'retaliate 5',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Elite_Duelist> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Divine_Knight>
+{'attack': u'183',
+ 'cost': u'9',
+ 'faction': u'human',
+ 'health': u'650',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/4/4b/H-DivineKnight.jpg/revision/latest/scale-to-width-down/210?cb=20141230233615',
+ 'name': u'divine knight',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 4',
+ 'skill2': u'immunity 5',
+ 'skill3': u'counter 5',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Praetor> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Border_Ranger>
+{'attack': u'173',
+ 'cost': u'11',
+ 'faction': u'human',
+ 'health': u'573',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/4/4c/H-BorderRanger.jpg/revision/latest/scale-to-width-down/210?cb=20141230233447',
+ 'name': u'border ranger',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 2',
+ 'skill2': u'assassinate 5',
+ 'skill3': u'sweeping blow',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Berserker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Creatureinal>
+{'attack': u'185',
+ 'cost': u'10',
+ 'faction': u'human',
+ 'health': u'650',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/e/eb/H-Creatureinal.jpg/revision/latest/scale-to-width-down/210?cb=20141230233525',
+ 'name': u'creatureinal',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'consecrate 4',
+ 'skill2': u'cloudburst 5',
+ 'skill3': u'counter 6',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Vicar>
+{'attack': u'125',
+ 'cost': u'8',
+ 'faction': u'human',
+ 'health': u'621',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/5/52/H-Vicar.jpg/revision/latest/scale-to-width-down/210?cb=20141230234423',
+ 'name': u'vicar',
+ 'rating': 2,
+ 'role': u'support',
+ 'skill1': u'holy light 4',
+ 'skill2': u'consecrate 4',
+ 'skill3': u'mass heal 4',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Missionary> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Elite_Duelist>
+{'attack': u'141',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'565',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/7/7b/H-EliteDuelist.jpg/revision/latest/scale-to-width-down/210?cb=20141230233708',
+ 'name': u'elite duelist',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'lock-down',
+ 'skill2': u'ice arrow 1',
+ 'skill3': u'battleblow 2',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Overseer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Praetor>
+{'attack': u'135',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'593',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/1/11/H-Praetor.jpg/revision/latest/scale-to-width-down/210?cb=20141230234121',
+ 'name': u'praetor',
+ 'rating': 2,
+ 'role': u'tank',
+ 'skill1': u'block 3',
+ 'skill2': u'consecrate 4',
+ 'skill3': u'dodge 3',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Protector> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sentinel> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Berserker>
+{'attack': u'169',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'531',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/6/6e/H-Berzerker.jpg/revision/latest/scale-to-width-down/210?cb=20141230233425',
+ 'name': u'berserker',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'dodge 3',
+ 'skill2': u'anger 3',
+ 'skill3': u'sweeping blow',
+ 'timer': u'4'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Missionary>
+{'attack': u'112',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'462',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/8/89/H-Missionary.jpg/revision/latest/scale-to-width-down/210?cb=20141230233937',
+ 'name': u'missionary',
+ 'rating': 2,
+ 'role': u'support',
+ 'skill1': u'bless 3',
+ 'skill2': u'consecrate 4',
+ 'skill3': u'humanity 3',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Overseer>
+{'attack': u'105',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'585',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/a3/Overseer_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160227094644',
+ 'name': u'overseeer',
+ 'rating': 2,
+ 'role': u'tank',
+ 'skill1': u'block 2',
+ 'skill2': u'immunity 3',
+ 'skill3': u'restoration 6',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Protector>
+{'attack': u'175',
+ 'cost': u'7',
+ 'faction': u'human',
+ 'health': u'526',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/0/0f/H-Protector.jpg/revision/latest/scale-to-width-down/210?cb=20141230234133',
+ 'name': u'protector',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'consecrate 2',
+ 'skill2': u'battleblow 2',
+ 'skill3': u'reflect 4',
+ 'timer': u'2'}
+2016-08-29 20:00:36 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sentinel>
+{'attack': u'176',
+ 'cost': u'6',
+ 'faction': u'human',
+ 'health': u'514',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/1e/H-Sentinel.jpg/revision/latest/scale-to-width-down/210?cb=20141230234253',
+ 'name': u'sentinel',
+ 'rating': 2,
+ 'role': u'caster',
+ 'skill1': u'assassin',
+ 'skill2': u'assassinate 2',
+ 'skill3': u'weakness 3',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Santa_Claudia> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Apprentice> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Scout> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Zealot> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Santa_Claudia>
+{'attack': u'313',
+ 'cost': u'18',
+ 'faction': u'faen',
+ 'health': u'1322',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/d/d5/Santa_Claudia_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160112190454',
+ 'name': u'santa claudia',
+ 'rating': 5,
+ 'role': u'healer',
+ 'skill1': u'tank',
+ 'skill2': u'immunity 8',
+ 'skill3': u'sanctify 10',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pikeman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Apprentice>
+{'attack': u'135',
+ 'cost': u'4',
+ 'faction': u'human',
+ 'health': u'357',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/5/57/H-Apprentice.jpg/revision/latest/scale-to-width-down/210?cb=20141230233310',
+ 'name': u'apprentice',
+ 'rating': 1,
+ 'role': u'support',
+ 'skill1': u'weakness 1',
+ 'skill2': u'meteor 2',
+ 'skill3': u'ice arrow 4',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Scout>
+{'attack': u'86',
+ 'cost': u'3',
+ 'faction': u'human',
+ 'health': u'300',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/9/90/H-Scout.jpg/revision/latest/scale-to-width-down/210?cb=20141230234232',
+ 'name': u'scout',
+ 'rating': 1,
+ 'role': u'support',
+ 'skill1': u'block 1',
+ 'skill2': u'consecrate 1',
+ 'skill3': u'delay 1',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Arcane_Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Marksman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Zealot>
+{'attack': u'105',
+ 'cost': u'4',
+ 'faction': u'human',
+ 'health': u'360',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/82/H-Zealot.jpg/revision/latest/scale-to-width-down/210?cb=20141230234448',
+ 'name': u'zealot',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'ambush 1',
+ 'skill2': u'delay 1',
+ 'skill3': u'counter 1',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Alice> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Axe_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pikeman>
+{'attack': u'95',
+ 'cost': u'3',
+ 'faction': u'human',
+ 'health': u'330',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/c/cc/H-Pikeman.jpg/revision/latest/scale-to-width-down/210?cb=20141230234041',
+ 'name': u'pikeman',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'stabthrough 1',
+ 'skill2': u'consecrate 2',
+ 'skill3': u'block 4',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Arcane_Knight>
+{'attack': None,
+ 'cost': u'21',
+ 'faction': u'faen',
+ 'health': None,
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/5/50/Arcane_Knight_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160112195735',
+ 'name': u'arcane knight',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'pyre 10',
+ 'skill2': u'surround',
+ 'skill3': u'arcane force',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Marksman>
+{'attack': u'110',
+ 'cost': u'4',
+ 'faction': u'human',
+ 'health': u'370',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/df/New_Marksman.png/revision/latest/scale-to-width-down/210?cb=20160409132840',
+ 'name': u'marksman',
+ 'rating': 1,
+ 'role': u'caster',
+ 'skill1': u'assassin',
+ 'skill2': u'assassinate 2',
+ 'skill3': u'assassinate 4',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Libra> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sagittarius> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Alice>
+{'attack': u'278',
+ 'cost': u'22',
+ 'faction': u'faen',
+ 'health': u'1322',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/e/e8/Alice_creature_card.png/revision/latest/scale-to-width-down/227?cb=20160228082600',
+ 'name': u'alice',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'mass heal 10',
+ 'skill2': u'immunity 8',
+ 'skill3': u'purge',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Axe_Warden>
+{'attack': u'342',
+ 'cost': u'20',
+ 'faction': u'faen',
+ 'health': u'1133',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/2/21/Axe_Warden_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160112152710',
+ 'name': u'axe warden',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 6',
+ 'skill2': u'rip',
+ 'skill3': u'quash',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Empire_Archer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Gaia> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dragonlord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Libra>
+{'attack': u'322',
+ 'cost': u'21',
+ 'faction': u'faen',
+ 'health': u'1288',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/4/4d/Libra_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151120102518',
+ 'name': u'libra',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'weakness 10',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'balance',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sagittarius>
+{'attack': u'344',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1066',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/1a/Sagittarius_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151114160444',
+ 'name': u'sagittarius',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'dodge 7',
+ 'skill2': u'picking off 10',
+ 'skill3': u'arrow split',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blood_Elf> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blossoms> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sea_Wizard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Empire_Archer>
+{'attack': u'168',
+ 'cost': u'6',
+ 'faction': u'human',
+ 'health': u'615',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/ca/H-EmpireArcher.jpg/revision/latest/scale-to-width-down/210?cb=20141230233718',
+ 'name': u'empire archer',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'stabthrough 3',
+ 'skill2': u'assassinate 5',
+ 'skill3': u'dodge 3',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Gaia>
+{'attack': u'365',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1188',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/2/2a/Gaia_backdrop.png/revision/latest/scale-to-width-down/210?cb=20160218171434',
+ 'name': u'gaia',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'divine grace',
+ 'skill2': u'spite',
+ 'skill3': u'revitalize',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dragonlord>
+{'attack': u'374',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1325',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/5/54/E-Dragonlord.jpg/revision/latest/scale-to-width-down/210?cb=20150210234035',
+ 'name': u'dragonlord',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'bless 10',
+ 'skill2': u'frost armor 8',
+ 'skill3': u'immunity 8',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lucky_Sage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blood_Elf>
+{'attack': u'512',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1244',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/9/93/E-BloodElf.jpg/revision/latest/scale-to-width-down/210?cb=20150116190742',
+ 'name': u'blood elf',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'life sap 7',
+ 'skill2': u'soul snatch 7',
+ 'skill3': u'shatter soul',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hanuman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Templar> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blossoms>
+{'attack': u'296',
+ 'cost': u'18',
+ 'faction': u'faen',
+ 'health': u'1065',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/5/59/E-Blossoms.jpg/revision/latest/scale-to-width-down/210?cb=20150210234016',
+ 'name': u'blossoms',
+ 'rating': 5,
+ 'role': u'caster',
+ 'skill1': u'dodge 7',
+ 'skill2': u'flourish',
+ 'skill3': u'pyre 10',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sea_Wizard>
+{'attack': u'375',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1411',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/2/2c/E-SeaWizard.jpg/revision/latest/scale-to-width-down/210?cb=20150206203449',
+ 'name': u'sea wizard',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'lock-down',
+ 'skill2': u'tempest 8',
+ 'skill3': u'sweeping blow',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Mimir%27s_Tree> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lucky_Sage>
+{'attack': u'398',
+ 'cost': u'19',
+ 'faction': u'faen',
+ 'health': u'1145',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b7/E-LuckySage.jpg/revision/latest/scale-to-width-down/210?cb=20150210234107',
+ 'name': u'lucky sage',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'[s]retreat',
+ 'skill2': u'rebirth 9',
+ 'skill3': u'silver starfall',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hippolyta> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Fae_Firstborn> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Yggdryad> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hanuman>
+{'attack': u'400',
+ 'cost': u'16',
+ 'faction': u'faen',
+ 'health': u'1350',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a3/E-Hanuman.jpg/revision/latest/scale-to-width-down/210?cb=20141230231746',
+ 'name': u'hanuman',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'maji shield 8',
+ 'skill2': u'holy light 10',
+ 'skill3': u'[s]disposal',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Moon_Guardian> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Templar>
+{'attack': u'156',
+ 'cost': u'5',
+ 'faction': u'human',
+ 'health': u'533',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/5/55/H-Templar.jpg/revision/latest/scale-to-width-down/210?cb=20141230234356',
+ 'name': u'templar',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'stabthrough 2',
+ 'skill2': u'warlust 2',
+ 'skill3': u'battleblow 3',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Mimir%27s_Tree>
+{'attack': u'354',
+ 'cost': u'16',
+ 'faction': u'faen',
+ 'health': u'1384',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/4/4c/E-Mimir%27sTree.jpg/revision/latest/scale-to-width-down/210?cb=20141230231909',
+ 'name': u"mimir's tree",
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'battleblow 6',
+ 'skill2': u'block 8',
+ 'skill3': u'immunity 8',
+ 'timer': u'6'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hippolyta>
+{'attack': u'305',
+ 'cost': u'18',
+ 'faction': u'faen',
+ 'health': u'1276',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/d1/E-Hippolyta.jpg/revision/latest/scale-to-width-down/210?cb=20141230231757',
+ 'name': u'hippolyta',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'[s]retreat',
+ 'skill2': u'recycle 2',
+ 'skill3': u'elven salve 9',
+ 'timer': u'6'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Fae_Firstborn>
+{'attack': u'345',
+ 'cost': u'17',
+ 'faction': u'faen',
+ 'health': u'1119',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/d7/New_Firstborn.png/revision/latest/scale-to-width-down/210?cb=20160226101900',
+ 'name': u'fae firstborn',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'frostbite 6',
+ 'skill2': u'(d) healing breath',
+ 'skill3': u'rebirth 5',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ash_Beast> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Yggdryad>
+{'attack': u'315',
+ 'cost': u'17',
+ 'faction': u'faen',
+ 'health': u'1261',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/bc/E-Yggdryad.jpg/revision/latest/scale-to-width-down/210?cb=20141230232324',
+ 'name': u'yggdryad',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'safeguard 7',
+ 'skill2': u'dodge 6',
+ 'skill3': u'delay 2',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Valkyrie> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Phoenix> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Moon_Guardian>
+{'attack': u'260',
+ 'cost': u'15',
+ 'faction': u'faen',
+ 'health': u'1197',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/d/d3/E-MoonGuardian.jpg/revision/latest/scale-to-width-down/210?cb=20141230231921',
+ 'name': u'moon guardian',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'assassin',
+ 'skill2': u'reflect 6',
+ 'skill3': u'sneak 8',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Laurel> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ash_Beast>
+{'attack': u'320',
+ 'cost': u'16',
+ 'faction': u'faen',
+ 'health': u'1359',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/cc/E-AshBeast.jpg/revision/latest/scale-to-width-down/210?cb=20141230231106',
+ 'name': u'ash beast',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'mass heal 6',
+ 'skill2': u'unbound',
+ 'skill3': u'sweeping blow',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Horned_Beast> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Horus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Valkyrie>
+{'attack': u'312',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'985',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/39/Valkyrie_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160130004135',
+ 'name': u'valkyrie',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'bullseye',
+ 'skill2': u'dodge 7',
+ 'skill3': u'wings of aegis',
+ 'timer': u'2'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dream_Guide> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Phoenix>
+{'attack': u'340',
+ 'cost': u'16',
+ 'faction': u'faen',
+ 'health': u'1291',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/7/7f/E-Pheonix.jpg/revision/latest/scale-to-width-down/210?cb=20141230232036',
+ 'name': u'phoenix',
+ 'rating': 5,
+ 'role': u'caster',
+ 'skill1': u'pyre 8',
+ 'skill2': u'restoration 7',
+ 'skill3': u'rebirth 8',
+ 'timer': u'4'}
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Henrietta> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:37 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Naga_Mistress> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Laurel>
+{'attack': u'298',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'973',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/1/10/Laurel_creature_card.png/revision/latest?cb=20151115215938',
+ 'name': u'laurel',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'battleblow 6',
+ 'skill2': u'weakness 8',
+ 'skill3': u'block 8',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Light_Brave> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Horned_Beast>
+{'attack': u'223',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'675',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b1/E-HornedBeast.jpg/revision/latest/scale-to-width-down/210?cb=20141230231809',
+ 'name': u'horned beast',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'immunity 7',
+ 'skill2': u'mass heal 5',
+ 'skill3': u'dodge 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Mesmer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Horus>
+{'attack': u'199',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'844',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/39/Horus_creature_card.png/revision/latest?cb=20151110101353',
+ 'name': u'horus',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u"thor's rage 5",
+ 'skill2': u'block 7',
+ 'skill3': u'retaliate 8',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flame_Brave> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dream_Guide>
+{'attack': u'304',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'862',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/7/7b/E-DreamGuide.jpg/revision/latest/scale-to-width-down/210?cb=20141230231226',
+ 'name': u'dream guide',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'bless 6',
+ 'skill2': u'rebirth 6',
+ 'skill3': u'spirite link 7',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Henrietta>
+{'attack': u'232',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'765',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/2/2f/E-Henrietta.jpg/revision/latest/scale-to-width-down/210?cb=20150206203410',
+ 'name': u'henrietta',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'healer',
+ 'skill2': u'mass heal 6',
+ 'skill3': u'elven salve 7',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Naga_Mistress>
+{'attack': u'205',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'805',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/1f/E-NagaMistress.jpg/revision/latest/scale-to-width-down/210?cb=20141230231944',
+ 'name': u'naga mistress',
+ 'rating': 4,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'ice arrow 7',
+ 'skill3': u'mass heal 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Satyr_Sentry> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Light_Brave>
+{'attack': u'205',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'775',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/1d/E-LightBrave.jpg/revision/latest/scale-to-width-down/210?cb=20141230231822',
+ 'name': u'light brave',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'bolt 8',
+ 'skill2': u'rebirth 6',
+ 'skill3': u'dodge 8',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Master_Guide> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pegasus_Lord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Mesmer>
+{'attack': u'217',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'1230',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/6/62/E-FaenMesmer.jpg/revision/latest/scale-to-width-down/210?cb=20141230231529',
+ 'name': u'faen mesmer',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'bloodrage 8',
+ 'skill2': u'discord 5',
+ 'skill3': u'sprite link 7',
+ 'timer': u'6'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Arrow_Brave> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Rampager> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flame_Brave>
+{'attack': u'238',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'849',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/7/7b/Flame_Brave_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160403154008',
+ 'name': u'flame brave',
+ 'rating': 4,
+ 'role': u'caster',
+ 'skill1': u'meteor 5',
+ 'skill2': u'pyre 7',
+ 'skill3': u'blaze 6',
+ 'timer': u'2'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Satyr_Sentry>
+{'attack': u'260',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'980',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/ff/E-SatyrSentry.jpg/revision/latest/scale-to-width-down/210?cb=20141230232132',
+ 'name': u'satyr sentry',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'miasma 6',
+ 'skill2': u'sprite link 5',
+ 'skill3': u'elven salve 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Moon_Walker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pale_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Master_Guide>
+{'attack': u'276',
+ 'cost': u'14',
+ 'faction': u'faen',
+ 'health': u'797',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/c/c0/E-MasterGuide.jpg/revision/latest/scale-to-width-down/210?cb=20141230231858',
+ 'name': u'master guide',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'holy light 4',
+ 'skill2': u'elven salve 5',
+ 'skill3': u'delay 2',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pegasus_Lord>
+{'attack': u'300',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'834',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/7/75/E-PegasusLord.jpg/revision/latest/scale-to-width-down/210?cb=20141230232025',
+ 'name': u'pegasus lord',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'lock-down',
+ 'skill2': u'miasma 6',
+ 'skill3': u'cloudburst 7',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Arrow_Brave>
+{'attack': u'255',
+ 'cost': u'12',
+ 'faction': u'faen',
+ 'health': u'799',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/11/E-ArrowBrave.jpg/revision/latest/scale-to-width-down/210?cb=20141230231049',
+ 'name': u'arrow brave',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'battleblow 5',
+ 'skill2': u'miasma 6',
+ 'skill3': u'dodge 5',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Treant_Elder> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Rampager>
+{'attack': u'258',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'1079',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/e/e8/E-FaenRampager.jpg/revision/latest/scale-to-width-down/210?cb=20141230231540',
+ 'name': u'faen rampager',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'delay 1',
+ 'skill2': u'block 8',
+ 'skill3': u'restoration 8',
+ 'timer': u'6'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Moon_Walker>
+{'attack': u'285',
+ 'cost': u'12/15(Evolved)',
+ 'faction': u'faen',
+ 'health': u'920',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/d0/MoonWalker.jpg/revision/latest/scale-to-width-down/210?cb=20160211094356',
+ 'name': u'moon walker',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'assassin',
+ 'skill2': u'miasma 7',
+ 'skill3': u'reflect 4',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Centaur_Guide> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pale_Dragon>
+{'attack': u'281',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'1087',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/ae/E-PaleDragon.jpg/revision/latest/scale-to-width-down/210?cb=20141230232002',
+ 'name': u'pale dragon',
+ 'rating': 4,
+ 'role': u'support',
+ 'skill1': u'miasma 6',
+ 'skill2': u'reflect 6',
+ 'skill3': u'sprite link 6',
+ 'timer': u'6'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pegasus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Centaur_Chief> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Ranger> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Treant_Elder>
+{'attack': u'270',
+ 'cost': u'13',
+ 'faction': u'faen',
+ 'health': u'820',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/6/65/E-TreantElder.jpg/revision/latest/scale-to-width-down/210?cb=20141230232144',
+ 'name': u'treant elder',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'assassin',
+ 'skill2': u'restoration 6',
+ 'skill3': u'picking off 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Frost_Rager> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Druid> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Centaur_Guide>
+{'attack': u'145',
+ 'cost': u'11',
+ 'faction': u'faen',
+ 'health': u'584',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/e/e9/Centaur_Guide.JPG/revision/latest/scale-to-width-down/210?cb=20150907154841',
+ 'name': u'centaur guide',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'non',
+ 'skill2': u'sprite link 3',
+ 'skill3': u'mass heal 4',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wood_Stalker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pegasus>
+{'attack': u'127',
+ 'cost': u'11',
+ 'faction': u'faen',
+ 'health': u'588',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/e/e7/Pegasus.JPG/revision/latest/scale-to-width-down/210?cb=20150907154326',
+ 'name': u'pegasus',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'bolt 2',
+ 'skill3': u'[s]thunderbolt 2',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Treant_Ranger> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Centaur_Chief>
+{'attack': u'262',
+ 'cost': u'12',
+ 'faction': u'faen',
+ 'health': u'850',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/2/2c/E-CentaurChief.jpg/revision/latest/scale-to-width-down/210?cb=20141230231141',
+ 'name': u'centaur chief',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'miasma 8',
+ 'skill2': u'block 7',
+ 'skill3': u'warlust 5',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Ranger>
+{'attack': u'160',
+ 'cost': u'11',
+ 'faction': u'faen',
+ 'health': u'676',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/0/06/E-FaenRanger.jpg/revision/latest/scale-to-width-down/210?cb=20141230231552',
+ 'name': u'faen ranger',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'sprite link 3',
+ 'skill2': u'delay 1',
+ 'skill3': u'elven salve 5',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dream_Healer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Treant_Guide> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Frost_Rager>
+{'attack': u'150',
+ 'cost': u'11, Evolved 14',
+ 'faction': u'faen',
+ 'health': u'538',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/1/1e/E-FrostRager.jpg/revision/latest/scale-to-width-down/210?cb=20141230231716',
+ 'name': u'frost rager',
+ 'rating': 3,
+ 'role': u'tank',
+ 'skill1': u'frost armor 3',
+ 'skill2': u'restoration 6',
+ 'skill3': u'elven salve 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Druid>
+{'attack': u'155',
+ 'cost': u'11',
+ 'faction': u'faen',
+ 'health': u'575',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/77/Druid_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151115200743',
+ 'name': u'druid',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'ice arrow 4',
+ 'skill2': u'weakness 3',
+ 'skill3': u'restoration 5',
+ 'timer': u'2'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wood_Stalker>
+{'attack': u'186',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'716',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/37/Wood_Stalker.JPG/revision/latest/scale-to-width-down/210?cb=20150907153723',
+ 'name': u'wood stalker',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'stabthrough 4',
+ 'skill2': u'assassinate 5',
+ 'skill3': u'miasma 6',
+ 'timer': u'2'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Treant_Weaver> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Treant_Ranger>
+{'attack': u'125',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'800',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/e/e6/Treant_Ranger.jpg/revision/latest/scale-to-width-down/210?cb=20150401013033',
+ 'name': u'treant ranger',
+ 'rating': 3,
+ 'role': u'tank',
+ 'skill1': u'counter 7',
+ 'skill2': u'restoration 6',
+ 'skill3': u'retaliate 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Guardian> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dream_Healer>
+{'attack': u'205',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'750',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/0/09/E-DreamHealer.jpg/revision/latest/scale-to-width-down/210?cb=20141230231238',
+ 'name': u'dream healer',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'holy light 4',
+ 'skill2': u'mass heal 4',
+ 'skill3': u'discord 4',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Treant_Guide>
+{'attack': u'160',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'588',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/85/E-TreantGuide.jpg/revision/latest/scale-to-width-down/210?cb=20141230232155',
+ 'name': u'treant guide',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'mass heal 3',
+ 'skill2': u'elven salve 4',
+ 'skill3': u'mass heal 5',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Elementalist> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ash_Highguard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Magic_Weaver> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Treant_Weaver>
+{'attack': u'184',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'617',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/1/1c/Treant_Weaver.JPG/revision/latest/scale-to-width-down/210?cb=20150907152452',
+ 'name': u'treant weaver',
+ 'rating': 3,
+ 'role': u'unknown',
+ 'skill1': u'restoration 4',
+ 'skill2': u'cloudburst 4',
+ 'skill3': u'retaliate 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Voltic_Priest> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Guardian>
+{'attack': u'122',
+ 'cost': u'9',
+ 'faction': u'faen',
+ 'health': u'600',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/5/5b/E-FaenGuardian.jpg/revision/latest/scale-to-width-down/210?cb=20141230231434',
+ 'name': u'faen guardian',
+ 'rating': 1,
+ 'role': u'support',
+ 'skill1': u'meteor 3',
+ 'skill2': u'restoration 4',
+ 'skill3': u'sprite link 4',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Elementalist>
+{'attack': u'192',
+ 'cost': u'9',
+ 'faction': u'faen',
+ 'health': u'678',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/3/3a/E-Elementalist.jpg/revision/latest/scale-to-width-down/210?cb=20141230231257',
+ 'name': u'elementalist',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'holy light 4',
+ 'skill2': u'miasma 6',
+ 'skill3': u'cloudburst 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Warrior> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ash_Highguard>
+{'attack': u'215',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'780',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a2/E-AshHighuard.jpg/revision/latest/scale-to-width-down/210?cb=20141230231116',
+ 'name': u'ash highguard',
+ 'rating': 3,
+ 'role': u'tank',
+ 'skill1': u'immunity 4',
+ 'skill2': u'block 5',
+ 'skill3': u'restoration 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Magic_Weaver>
+{'attack': u'110',
+ 'cost': u'10',
+ 'faction': u'faen',
+ 'health': u'484',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/4/43/Magic_Weaver.JPG/revision/latest/scale-to-width-down/210?cb=20150907153155',
+ 'name': u'magic weaver',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'mass heal 4',
+ 'skill2': u'meteor 5',
+ 'skill3': u'incinerate 4',
+ 'timer': u'2'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Hunter> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Guard>
+{'attack': u'161',
+ 'cost': u'8',
+ 'faction': u'faen',
+ 'health': u'556',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/2/24/E-FaenGuard.jpg/revision/latest/scale-to-width-down/210?cb=20141230231424',
+ 'name': u'faen guard',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'sprite link 2',
+ 'skill2': u'block 4',
+ 'skill3': u'miasma 6',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Marksman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Frost_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Voltic_Priest>
+{'attack': u'136',
+ 'cost': u'9',
+ 'faction': u'faen',
+ 'health': u'620',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/86/E-VolticPriest.jpg/revision/latest/scale-to-width-down/210?cb=20141230232233',
+ 'name': u'voltic priest',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'cloudburst 2',
+ 'skill2': u'holy light 5',
+ 'skill3': u'elven salve 5',
+ 'timer': u'4'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Warrior>
+{'attack': u'134',
+ 'cost': u'7',
+ 'faction': u'faen',
+ 'health': u'495',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/73/E-FaenWarrior.jpg/revision/latest/scale-to-width-down/210?cb=20141230231642',
+ 'name': u'faen warrior',
+ 'rating': 2,
+ 'role': u'tank',
+ 'skill1': u'block 3',
+ 'skill2': u'miasma 4',
+ 'skill3': u'dodge 3',
+ 'timer': u'2'}
+2016-08-29 20:00:38 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Archer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:38 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Hunter>
+{'attack': u'144',
+ 'cost': u'7',
+ 'faction': u'faen',
+ 'health': u'579',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/1/19/E-FaenHunter.jpg/revision/latest/scale-to-width-down/210?cb=20141230231504',
+ 'name': u'faen hunter',
+ 'rating': 2,
+ 'role': u'support',
+ 'skill1': u'elven salve 2',
+ 'skill2': u'delay 1',
+ 'skill3': u'block 5',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wood_Patrol> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Centaur_Grunt> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Centaur_Tracker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Rogue> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Marksman>
+{'attack': u'168',
+ 'cost': u'9',
+ 'faction': u'faen',
+ 'health': u'472',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/e/e1/E-FaenMarksman.jpg/revision/latest/scale-to-width-down/210?cb=20141230231518',
+ 'name': u'faen marksman',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'assassin',
+ 'skill2': u'assassinate 5',
+ 'skill3': u'battleblow 5',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Frost_Warden>
+{'attack': u'121',
+ 'cost': u'8',
+ 'faction': u'faen',
+ 'health': u'518',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/b2/E-FrostWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230231727',
+ 'name': u'frost warden',
+ 'rating': 2,
+ 'role': u'support',
+ 'skill1': u'ice arrow 5',
+ 'skill2': u'heart wave 5',
+ 'skill3': u'ice arrow 7',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Archer>
+{'attack': u'137',
+ 'cost': u'6',
+ 'faction': u'faen',
+ 'health': u'493',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/d/df/E-FaenArcher.jpg/revision/latest/scale-to-width-down/210?cb=20141230231354',
+ 'name': u'faen archer',
+ 'rating': 2,
+ 'role': u'caster',
+ 'skill1': u'assassin',
+ 'skill2': u'assassinate 2',
+ 'skill3': u'miasma 5',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wood_Patrol>
+{'attack': u'111',
+ 'cost': u'6',
+ 'faction': u'faen',
+ 'health': u'455',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/a/ad/E-WoodPatrol.jpg/revision/latest/scale-to-width-down/210?cb=20141230232258',
+ 'name': u'wood patrol',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'assassinate 1',
+ 'skill2': u'restoration 2',
+ 'skill3': u'ambush 4',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Centaur_Grunt>
+{'attack': u'142',
+ 'cost': u'5',
+ 'faction': u'faen',
+ 'health': u'516',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/3/3c/E-CentaurGrunt.jpg/revision/latest/scale-to-width-down/210?cb=20141230231152',
+ 'name': u'centaur grunt',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'miasma 3',
+ 'skill2': u'stabthrough 5',
+ 'skill3': u'assassinate 4',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Centaur_Tracker>
+{'attack': u'130',
+ 'cost': u'7',
+ 'faction': u'faen',
+ 'health': u'570',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/e/e7/E-CentaurTracker.jpg/revision/latest/scale-to-width-down/210?cb=20141230231215',
+ 'name': u'centaur tracker',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'miasma 4',
+ 'skill2': u'counter 4',
+ 'skill3': u'restoration 6',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Rogue>
+{'attack': u'177',
+ 'cost': u'6',
+ 'faction': u'faen',
+ 'health': u'609',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/8b/E-FaenRogue.jpg/revision/latest/scale-to-width-down/210?cb=20141230231605',
+ 'name': u'faen rogue',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'block 2',
+ 'skill2': u'[s]hobble 1',
+ 'skill3': u'anger 3',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Hound> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Hound>
+{'attack': u'116',
+ 'cost': u'4',
+ 'faction': u'faen',
+ 'health': u'285',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/b/ba/E-FaenHound.jpg/revision/latest/scale-to-width-down/210?cb=20141230231445',
+ 'name': u'faen hound',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'ambush 1',
+ 'skill2': u'miasma 4',
+ 'skill3': u'bloodlust 3',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Warden>
+{'attack': u'95',
+ 'cost': u'3',
+ 'faction': u'faen',
+ 'health': u'308',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/f1/E-FaenWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230231631',
+ 'name': u'faen warden',
+ 'rating': 1,
+ 'role': u'tank',
+ 'skill1': u'block 1',
+ 'skill2': u'miasma 3',
+ 'skill3': u'counter 4',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Soul_Shrew> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bloom_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Scorpio> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Capricorn> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lava_Wyrm> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flame_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Faen_Brave> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Soul_Shrew>
+{'attack': u'321',
+ 'cost': u'21',
+ 'faction': u'neander',
+ 'health': u'1186',
+ 'image': None,
+ 'name': u'soul shrew',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'dodge 8',
+ 'skill2': u'immunity 8',
+ 'skill3': u'the swarm',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bloom_Warden>
+{'attack': u'90',
+ 'cost': u'3',
+ 'faction': u'faen',
+ 'health': u'286',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/0/07/E-BloomWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230231130',
+ 'name': u'bloom warden',
+ 'rating': 1,
+ 'role': u'support',
+ 'skill1': u'holy light 2',
+ 'skill2': u'meteor 1',
+ 'skill3': u'dodge 2',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Scorpio>
+{'attack': None,
+ 'cost': u'22',
+ 'faction': u'neander',
+ 'health': None,
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/a/a3/Scorpio_creature_card.png/revision/latest?cb=20160112203757',
+ 'name': u'scorpio',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'dodge 10',
+ 'skill2': u'bullseye',
+ 'skill3': u'impale',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Capricorn>
+{'attack': u'383',
+ 'cost': u'20',
+ 'faction': u'neander',
+ 'health': u'1164',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/2/25/Capricorn_creature_card.png/revision/latest?cb=20160112202838',
+ 'name': u'capricorn',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'toxicity 9',
+ 'skill2': u'dodge 10',
+ 'skill3': u'fervent',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lava_Wyrm>
+{'attack': u'442',
+ 'cost': u'20',
+ 'faction': u'neander',
+ 'health': u'1465',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/1/18/Lava_Wyrm_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160323164757',
+ 'name': u'lava wyrm',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'life sap 8',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'warcry 10',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flame_Warden>
+{'attack': u'151',
+ 'cost': u'6',
+ 'faction': u'faen',
+ 'health': u'511',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/cf/E-FlameWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230231705',
+ 'name': u'flame warden',
+ 'rating': 2,
+ 'role': u'caster',
+ 'skill1': u'incinerate 2',
+ 'skill2': u'sprite link 3',
+ 'skill3': u'incinerate 3',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Faen_Brave>
+{'attack': u'85',
+ 'cost': u'3',
+ 'faction': u'faen',
+ 'health': u'274',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/38/E-FaenBrave.jpg/revision/latest/scale-to-width-down/210?cb=20141230231406',
+ 'name': u'faen brave',
+ 'rating': 1,
+ 'role': u'support',
+ 'skill1': u'restoration 1',
+ 'skill2': u'ice arrow 2',
+ 'skill3': u'dodge 1',
+ 'timer': u'2'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Taurus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Night%27s_Slayer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Easter_Bunny> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wind_Warden> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ridge_Hunter> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Oinari> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Kitsune> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Kumiho> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Taurus>
+{'attack': u'332',
+ 'cost': u'20',
+ 'faction': u'neander',
+ 'health': u'1350',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/2/27/Taurus_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151120105055',
+ 'name': u'taurus',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'nobility 10',
+ 'skill2': u'earth totem 10',
+ 'skill3': u'omega impact',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Night%27s_Slayer>
+{'attack': u'355',
+ 'cost': u'21',
+ 'faction': u'neander',
+ 'health': u'1211',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/34/Nights_slayer_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151115132035',
+ 'name': u"night's slayer",
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'battleblow 6',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'onslaught',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Easter_Bunny>
+{'attack': u'311',
+ 'cost': u'20',
+ 'faction': u'neander',
+ 'health': u'1088',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/2/24/Easter_Bunny_creature_card_base_stats.png/revision/latest?cb=20160119152823',
+ 'name': u'easter bunny',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'hero-killer',
+ 'skill2': u'rebirth 5',
+ 'skill3': u'bloodrage 10',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wind_Warden>
+{'attack': u'75',
+ 'cost': u'4',
+ 'faction': u'faen',
+ 'health': u'396',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/3/34/E-WindWarden.jpg/revision/latest/scale-to-width-down/210?cb=20141230232245',
+ 'name': u'wind warden',
+ 'rating': 1,
+ 'role': u'tank',
+ 'skill1': u'dodge 1',
+ 'skill2': u'block 3',
+ 'skill3': u'counter 4',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ridge_Hunter>
+{'attack': u'359',
+ 'cost': u'19',
+ 'faction': u'neander',
+ 'health': u'1265',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b6/O-RidgeHunter.jpg/revision/latest/scale-to-width-down/210?cb=20150206203438',
+ 'name': u'ridge hunter',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'sweeping blow',
+ 'skill2': u'dodge 5',
+ 'skill3': u'soul snatch 7',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Oinari>
+{'attack': u'215',
+ 'cost': u'20',
+ 'faction': u'neander',
+ 'health': u'1015',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/d/d6/O-Oinari.jpg/revision/latest/scale-to-width-down/210?cb=20150210234119',
+ 'name': u'oinari',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'feral fever 10',
+ 'skill2': u'rebirth 7',
+ 'skill3': u'(s)resurrect',
+ 'timer': u'6'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Kitsune>
+{'attack': u'387',
+ 'cost': u'19',
+ 'faction': u'neander',
+ 'health': u'1395',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/9/9e/O-Kitsune.jpg/revision/latest/scale-to-width-down/210?cb=20150210234134',
+ 'name': u'kitsune',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'danse macabre',
+ 'skill2': u'unbound',
+ 'skill3': u'gemini',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Kumiho>
+{'attack': u'365',
+ 'cost': u'19',
+ 'faction': u'neander',
+ 'health': u'1305',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/2/2d/O-Kumiho.jpg/revision/latest/scale-to-width-down/210?cb=20150210234150',
+ 'name': u'kumiho',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'demonization',
+ 'skill2': u'rebirth 10',
+ 'skill3': u'gemini',
+ 'timer': u'4'}
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Yeti> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Abaddon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Quetzalcoatl> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:39 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Anathema> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Yeti>
+{'attack': u'465',
+ 'cost': u'19',
+ 'faction': u'neander',
+ 'health': u'1498',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/d6/O-Yeti.jpg/revision/latest/scale-to-width-down/210?cb=20150214161736',
+ 'name': u'yeti',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'restoration 9',
+ 'skill2': u'tempest 9',
+ 'skill3': u'bellow',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Abaddon>
+{'attack': u'362',
+ 'cost': u'17',
+ 'faction': u'neander',
+ 'health': u'1198',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/d/d8/O-Abaddon.jpg/revision/latest/scale-to-width-down/210?cb=20150130225502',
+ 'name': u'abaddon',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u"thor's rage 7",
+ 'skill2': u'retaliate 8',
+ 'skill3': u'immunity 9',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nidhogg> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Quetzalcoatl>
+{'attack': u'340',
+ 'cost': u'17',
+ 'faction': u'neander',
+ 'health': u'1212',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/5/53/O-Quetzalcoatl.jpg/revision/latest/scale-to-width-down/210?cb=20150130230349',
+ 'name': u'quetzalcoatl',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'plague 8',
+ 'skill2': u'weakness 10',
+ 'skill3': u'rebirth 9',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Spider_Queen> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Venom_Tyrant> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sekhmet> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Anathema>
+{'attack': u'325',
+ 'cost': u'16',
+ 'faction': u'neander',
+ 'health': u'1375',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/4/4a/O-Anathema.jpg/revision/latest/scale-to-width-down/210?cb=20150130225521',
+ 'name': u'anathema',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'gas cloud 8',
+ 'skill2': u'stoneskin',
+ 'skill3': u'bullseye',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nidhogg>
+{'attack': u'290',
+ 'cost': u'17',
+ 'faction': u'neander',
+ 'health': u'1375',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/2/20/Nidhogg.jpg/revision/latest/scale-to-width-down/210?cb=20150623044449',
+ 'name': u'nidhogg',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'field control',
+ 'skill2': u'earth totem 10',
+ 'skill3': u'stoneskin',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Spider_Queen>
+{'attack': u'360',
+ 'cost': u'16',
+ 'faction': u'neander',
+ 'health': u'1267',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a0/O-SpiderQueen.jpg/revision/latest/scale-to-width-down/210?cb=20150130230442',
+ 'name': u'spider queen',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'venom edge 8',
+ 'skill2': u'ravage 9',
+ 'skill3': u'immunity 9',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Venom_Tyrant>
+{'attack': u'335',
+ 'cost': u'15',
+ 'faction': u'neander',
+ 'health': u'1330',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/3f/O-VenomTyrant.jpg/revision/latest/scale-to-width-down/210?cb=20150130230655',
+ 'name': u'venom tyrant',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'sacrifice 8',
+ 'skill2': u'gas cloud 8',
+ 'skill3': u'restoration 9',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sekhmet>
+{'attack': u'279',
+ 'cost': u'15',
+ 'faction': u'neander',
+ 'health': u'1611',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/36/Sekhmet.jpg/revision/latest/scale-to-width-down/210?cb=20150623042824',
+ 'name': u'sekhmet',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'life sap 6',
+ 'skill2': u'bloodrage 8',
+ 'skill3': u'unbound',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Tidal_Siren> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wolveria> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Griffin_Rider> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Fenrir> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Kirin> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ophiuchus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/The_Twins> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nean_Raptor> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Tidal_Siren>
+{'attack': u'216',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'1151',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/9/96/Tidal_Siren.jpg/revision/latest/scale-to-width-down/210?cb=20150623042659',
+ 'name': u'tidal siren',
+ 'rating': 5,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'tempest 5',
+ 'skill3': u'discord 7',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wolveria>
+{'attack': u'215',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'844',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/5b/Wolveria_creature_card.png/revision/latest?cb=20160108001917',
+ 'name': u'wolveria',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'ambush 8',
+ 'skill2': u'rage boost 5',
+ 'skill3': u'feral fever 8',
+ 'timer': u'2'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Griffin_Rider>
+{'attack': u'243',
+ 'cost': u'12',
+ 'faction': u'neander',
+ 'health': u'973',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/8/89/Griffin_Rider_creature_card.png/revision/latest?cb=20160108002849',
+ 'name': u'griffin rider',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'dodge 5',
+ 'skill2': u'assassinte 8',
+ 'skill3': u'life sap 7',
+ 'timer': u'2'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flame_Master> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Fenrir>
+{'attack': u'288',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'986',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/2/23/Fenrir_creature_card.png/revision/latest?cb=20160108002438',
+ 'name': u'fenrir',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'restoration 10',
+ 'skill2': u'dodge 7',
+ 'skill3': u'battleblow 8',
+ 'timer': u'2'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Kirin>
+{'attack': u'189',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'821',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a7/Kirin_creature_card.png/revision/latest?cb=20151114135724',
+ 'name': u'kirin',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'pyre 8',
+ 'skill2': u'battleblow 7',
+ 'skill3': u'ambush 10',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ophiuchus>
+{'attack': u'223',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'625',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/7/74/Ophiuchus.jpg/revision/latest/scale-to-width-down/210?cb=20150623042059',
+ 'name': u'ophiuchus',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'gas cloud 6',
+ 'skill2': u'dodge 7',
+ 'skill3': u'meteor rain',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/The_Twins>
+{'attack': u'247',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'712',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/1/1e/O-TheTwins.jpg/revision/latest/scale-to-width-down/210?cb=20150206203501',
+ 'name': u'the twins',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'stoneskin',
+ 'skill2': u'twin defense',
+ 'skill3': u'twin terror',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nean_Raptor>
+{'attack': u'250',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'1106',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/31/Nean_Raptor.jpg/revision/latest/scale-to-width-down/210?cb=20150623041834',
+ 'name': u'nean raptor',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'dodge 4',
+ 'skill2': u'maji shield 6',
+ 'skill3': u'rip',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Cyclops> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Graboid> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flame_Master>
+{'attack': u'253',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'900',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/b7/O-FlameMaster.jpg/revision/latest/scale-to-width-down/210?cb=20150130225721',
+ 'name': u'flame master',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'pyre 6',
+ 'skill2': u'life sap 6',
+ 'skill3': u'feral fever 7',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Icy_Huntress> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Tauros_Elder> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Ursa_Major> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Mammoth_Rider> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Warband_Chief> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Neamazon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Cyclops>
+{'attack': u'246',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'982',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/f/f7/O-Cyclops.jpg/revision/latest/scale-to-width-down/210?cb=20150130225628',
+ 'name': u'cyclops',
+ 'rating': 4,
+ 'role': u'special',
+ 'skill1': u'[s]lethargy 5',
+ 'skill2': u'sweeping blow',
+ 'skill3': u'[s]instakill',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Graboid>
+{'attack': u'269',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'1154',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/f/fa/O-Graboid.jpg/revision/latest/scale-to-width-down/210?cb=20150130225739',
+ 'name': u'graboid',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'stoneskin',
+ 'skill3': u'ravage 7',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Icy_Huntress>
+{'attack': u'245',
+ 'cost': u'14',
+ 'faction': u'neander',
+ 'health': u'935',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/f/f8/O-IcyHuntress.jpg/revision/latest/scale-to-width-down/210?cb=20150130225849',
+ 'name': u'icy huntress',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'ambush 5',
+ 'skill2': u'earth totem 6',
+ 'skill3': u'delay 2',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Tauros_Elder>
+{'attack': u'255',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'842',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/c8/Tauros_Elder.jpg/revision/latest/scale-to-width-down/210?cb=20150623040421',
+ 'name': u'tauros elder',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'battleblow 7',
+ 'skill2': u'block 7',
+ 'skill3': u'earth totem 7',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Ursa_Major>
+{'attack': u'245',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'915',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/b0/O-UrsaMajor.jpg/revision/latest/scale-to-width-down/210?cb=20141231001204',
+ 'name': u'ursa major',
+ 'rating': 4,
+ 'role': u'tank',
+ 'skill1': u'hero-killer',
+ 'skill2': u'stabthrough 7',
+ 'skill3': u'frost armor 7',
+ 'timer': u'4'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Mammoth_Rider>
+{'attack': u'284',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'1223',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/9/98/Mammoth_Rider.jpg/revision/latest/scale-to-width-down/210?cb=20150623040551',
+ 'name': u'mammoth rider',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'fighter',
+ 'skill2': u'block level 2',
+ 'skill3': u'retaliate level 6',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Warband_Chief>
+{'attack': u'245',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'838',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/6/68/O-WarbandChief.jpg/revision/latest/scale-to-width-down/210?cb=20150130230705',
+ 'name': u'warband chief',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'counter 7',
+ 'skill2': u'ravage 7',
+ 'skill3': u'feral fever 6',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Neamazon>
+{'attack': u'260',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'964',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/8/8f/Neamazon_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160110160235',
+ 'name': u'neamazon',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'bloodlust 7',
+ 'skill2': u'feral fever 5',
+ 'skill3': u'counter 10',
+ 'timer': u'6'}
+2016-08-29 20:00:40 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Alert_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Panther_Chief> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Neander_Giant> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Howling_King> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Tauro_General> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Alert_Guard>
+{'attack': u'210',
+ 'cost': u'11',
+ 'faction': u'neander',
+ 'health': u'640',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/9/93/O-AlertGuard.jpg/revision/latest/scale-to-width-down/210?cb=20150130225512',
+ 'name': u'alert guard',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'block 5',
+ 'skill2': u'battleblow 8',
+ 'skill3': u'stoneskin',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Fire_Lizard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Rite_Master> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lazy_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blood_Soldier> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Panther_Chief>
+{'attack': u'260',
+ 'cost': u'13',
+ 'faction': u'neander',
+ 'health': u'896',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/f8/O-PantherChief.jpg/revision/latest/scale-to-width-down/210?cb=20150130230324',
+ 'name': u'panther chief',
+ 'rating': 4,
+ 'role': u'fighter',
+ 'skill1': u'anger 5',
+ 'skill2': u'warlust 8',
+ 'skill3': u'life sap 8',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Neander_Giant>
+{'attack': u'225',
+ 'cost': u'12',
+ 'faction': u'neander',
+ 'health': u'1071',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/6/68/O-NeanderGiant.jpg/revision/latest/scale-to-width-down/210?cb=20150130230005',
+ 'name': u'neander giant',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'retaliate 6',
+ 'skill2': u'restoration 6',
+ 'skill3': u'anger 7',
+ 'timer': u'6'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Howling_King>
+{'attack': u'253',
+ 'cost': u'12',
+ 'faction': u'neander',
+ 'health': u'890',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/1/1b/O-HowlingKing.jpg/revision/latest/scale-to-width-down/210?cb=20150130225838',
+ 'name': u'howling king',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'ravage 6',
+ 'skill2': u'reflect 4',
+ 'skill3': u'bloodlust 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Tauro_General>
+{'attack': u'280',
+ 'cost': u'12',
+ 'faction': u'neander',
+ 'health': u'1102',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/b/b8/O-TauroGeneral.jpg/revision/latest/scale-to-width-down/210?cb=20150130230453',
+ 'name': u'tauro general',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'battleblow 5',
+ 'skill2': u'anger 6',
+ 'skill3': u'restoration 7',
+ 'timer': u'6'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Fire_Lizard>
+{'attack': u'155',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'554',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/a2/O-FireLizard.jpg/revision/latest/scale-to-width-down/210?cb=20150130225711',
+ 'name': u'fire lizard',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'meteor 4',
+ 'skill2': u'gas cloud 2',
+ 'skill3': u'detonate 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Rite_Master>
+{'attack': u'175',
+ 'cost': u'11',
+ 'faction': u'neander',
+ 'health': u'711',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/2/24/Rite_Master_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160118193538',
+ 'name': u'rite master',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'block 4',
+ 'skill2': u'anger 5',
+ 'skill3': u'restoration 5',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lazy_Guard>
+{'attack': u'180',
+ 'cost': u'11',
+ 'faction': u'neander',
+ 'health': u'794',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/ad/Lazy_Guard.jpg/revision/latest/scale-to-width-down/210?cb=20150623040019',
+ 'name': u'lazy guard',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'venom edge 4',
+ 'skill2': u'block 7',
+ 'skill3': u'dodge 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blood_Soldier>
+{'attack': u'185',
+ 'cost': u'11',
+ 'faction': u'neander',
+ 'health': u'595',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/5/5b/Blood_Soldier.jpg/revision/latest/scale-to-width-down/210?cb=20150623050127',
+ 'name': u'blood soldier',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'bloodlust 5',
+ 'skill2': u'restoration 4',
+ 'skill3': u'block 7',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Hippo_Raider> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Feline_Lurker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Troll_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Troll_Mage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Panther_Guard> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Harpy_Queen> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blood_Shaman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Desert_Sting> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blood_Warlock> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Hippo_Raider>
+{'attack': u'195',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'690',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/9/95/Hippo_Raider.jpg/revision/latest/scale-to-width-down/210?cb=20150623035609',
+ 'name': u'hippo raider',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'battleblow 4',
+ 'skill2': u'atrophy 6',
+ 'skill3': u'earth totem 6',
+ 'timer': u'6'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Feline_Lurker>
+{'attack': u'205',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'684',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/f7/Lurker.jpg/revision/latest?cb=20150322124714',
+ 'name': u'feline lurker',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'lethargy 4',
+ 'skill2': u'bloodlust 4',
+ 'skill3': u'battleblow 7',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Troll_Guard>
+{'attack': u'155',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'800',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/76/Troll_Guard_creature_card_new.png/revision/latest/scale-to-width-down/210?cb=20160119153802',
+ 'name': u'troll guard',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'block 5',
+ 'skill2': u'flaming 5',
+ 'skill3': u'earth totem 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Troll_Mage>
+{'attack': u'220',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'753',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/32/O-TrollMage.jpg/revision/latest/scale-to-width-down/210?cb=20150130230557',
+ 'name': u'troll mage',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'(d)backdraft 5',
+ 'skill2': u'anger 6',
+ 'skill3': u'bloodlust 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Panther_Guard>
+{'attack': u'189',
+ 'cost': u'10',
+ 'faction': u'neander',
+ 'health': u'648',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/e/e7/PantherGuard.png/revision/latest/scale-to-width-down/210?cb=20150322071055',
+ 'name': u'panther guard',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'stabthrough 4',
+ 'skill2': u'bloodlust 4',
+ 'skill3': u'life sap 6',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Troll_Scout> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Harpy_Queen>
+{'attack': u'194',
+ 'cost': u'9',
+ 'faction': u'neander',
+ 'health': u'685',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/33/Harpy_Queen.jpg/revision/latest/scale-to-width-down/210?cb=20150623033718',
+ 'name': u'harpy queen',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'gas cloud 3',
+ 'skill3': u'ravage 7',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blood_Shaman>
+{'attack': u'156',
+ 'cost': u'9',
+ 'faction': u'neander',
+ 'health': u'649',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/6/6e/BloodShaman.jpg/revision/latest/scale-to-width-down/210?cb=20150322221134',
+ 'name': u'blood shaman',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'incinerate 3',
+ 'skill2': u'weakness 6',
+ 'skill3': u'feral fever 5',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Desert_Sting>
+{'attack': u'186',
+ 'cost': u'9',
+ 'faction': u'neander',
+ 'health': u'667',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/5/57/Desert_Sting_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160112181607',
+ 'name': u'desert sting',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'ravage 5',
+ 'skill3': u'stinger 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blood_Warlock>
+{'attack': u'175',
+ 'cost': u'9',
+ 'faction': u'neander',
+ 'health': u'580',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/cd/O-BloodWarlock.jpg/revision/latest/scale-to-width-down/210?cb=20150130225617',
+ 'name': u'blood warlock',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'bless 7',
+ 'skill2': u'gas cloud 5',
+ 'skill3': u'mass heal 6',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Black_Widow> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Troll_Scout>
+{'attack': u'203',
+ 'cost': u'9',
+ 'faction': u'neander',
+ 'health': u'700',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/8/8a/O-TrollScout.jpg/revision/latest/scale-to-width-down/210?cb=20150130230616',
+ 'name': u'troll scout',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'ambush 6',
+ 'skill3': u'ravage 6',
+ 'timer': u'6'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wifwulf> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Venom_Queen> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bloodseeker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Elder_Shaman> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Black_Widow>
+{'attack': u'250',
+ 'cost': u'7',
+ 'faction': u'neander',
+ 'health': u'510',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/2/26/Black_Widow_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160328152912',
+ 'name': u'black widow',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'injured 5',
+ 'skill2': u'life sap 7',
+ 'skill3': u'afflict 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Witch_Doctor> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wolf_Rider> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Sandstalker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wifwulf>
+{'attack': u'165',
+ 'cost': u'8',
+ 'faction': u'neander',
+ 'health': u'568',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/3/34/Wifwulf.jpg/revision/latest/scale-to-width-down/210?cb=20150623032006',
+ 'name': u'wifwulf',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'ravage 3',
+ 'skill3': u'bloodlust 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Venom_Queen>
+{'attack': u'155',
+ 'cost': u'8',
+ 'faction': u'neander',
+ 'health': u'430',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/33/Venom_Queen.jpg/revision/latest/scale-to-width-down/210?cb=20150808141550',
+ 'name': u'venom queen',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'stinger 5',
+ 'skill2': u'afflict 2',
+ 'skill3': u'gas cloud 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nean_Warhog> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bloodseeker>
+{'attack': u'134',
+ 'cost': u'7',
+ 'faction': u'neander',
+ 'health': u'490',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/4/43/Bloodseeker.jpg/revision/latest/scale-to-width-down/210?cb=20150623032757',
+ 'name': u'bloodseeker',
+ 'rating': 2,
+ 'role': u'tank',
+ 'skill1': u'anti-human',
+ 'skill2': u'life sap 4',
+ 'skill3': u'ravage 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Elder_Shaman>
+{'attack': u'149',
+ 'cost': u'7',
+ 'faction': u'neander',
+ 'health': u'512',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a2/Elder_Shaman.jpg/revision/latest/scale-to-width-down/210?cb=20150623032300',
+ 'name': u'elder shaman',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'ravage 4',
+ 'skill3': u'ambush 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Witch_Doctor>
+{'attack': u'110',
+ 'cost': u'5',
+ 'faction': u'neander',
+ 'health': u'450',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/7/70/O-WitchDoctor.jpg/revision/latest/scale-to-width-down/210?cb=20150130230715',
+ 'name': u'witch doctor',
+ 'rating': 2,
+ 'role': u'caster',
+ 'skill1': u'stinger 2',
+ 'skill2': u'detonate 2',
+ 'skill3': u'feral fever 3',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wolf_Rider>
+{'attack': u'150',
+ 'cost': u'7',
+ 'faction': u'neander',
+ 'health': u'516',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/d/dc/Wolf_Rider.jpg/revision/latest/scale-to-width-down/210?cb=20150623035130',
+ 'name': u'wolf rider',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'venom edge',
+ 'skill2': u'counter 4',
+ 'skill3': u'restoration 5',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Sandstalker>
+{'attack': u'163',
+ 'cost': u'7',
+ 'faction': u'neander',
+ 'health': u'470',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/d/d8/Sandstalker.jpg/revision/latest/scale-to-width-down/210?cb=20150623033445',
+ 'name': u'sandstalker',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'stinger 4',
+ 'skill3': u'ambush 3',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Neander_Hippo> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nean_Warhog>
+{'attack': u'157',
+ 'cost': u'5',
+ 'faction': u'neander',
+ 'health': u'475',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/c/cc/Nean_Warhog.jpg/revision/latest/scale-to-width-down/210?cb=20150623035016',
+ 'name': u'nean warhog',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'earth totem 2',
+ 'skill2': u'block 2',
+ 'skill3': u'counter 5',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Tauros_Seeker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Shaman_Adept> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nean_Thrall> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flying_Fox> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Neander_Tauro> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Neander_Hippo>
+{'attack': u'75',
+ 'cost': u'3',
+ 'faction': u'neander',
+ 'health': u'278',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/c/cd/Neander_Hippo.jpg/revision/latest/scale-to-width-down/210?cb=20150623034640',
+ 'name': u'neander hippo',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'stinger 1',
+ 'skill2': u'delay 1',
+ 'skill3': u'battleblow 4',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dusk_Huntress> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lich_Lord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Tauros_Seeker>
+{'attack': u'135',
+ 'cost': u'5',
+ 'faction': u'neander',
+ 'health': u'455',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/4/41/Tauros_Seeker.jpg/revision/latest/scale-to-width-down/210?cb=20150623034012',
+ 'name': u'tauros seeker',
+ 'rating': 2,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'battleblow 3',
+ 'skill3': u'life sap 5',
+ 'timer': u'4'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Chiroptera> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Shaman_Adept>
+{'attack': u'88',
+ 'cost': u'4',
+ 'faction': u'neander',
+ 'health': u'335',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/33/Shaman_Adept_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160118063941',
+ 'name': u'shaman adept',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'detonate 1',
+ 'skill2': u'delay 1',
+ 'skill3': u'cloudburst 3',
+ 'timer': u'2'}
+2016-08-29 20:00:41 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nean_Thrall>
+{'attack': u'90',
+ 'cost': u'4',
+ 'faction': u'neander',
+ 'health': u'350',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/c8/Nean_Thrall.jpg/revision/latest/scale-to-width-down/210?cb=20150623032922',
+ 'name': u'nean thrall',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'block 1',
+ 'skill3': u'ravage 4',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flying_Fox>
+{'attack': u'97',
+ 'cost': u'4',
+ 'faction': u'neander',
+ 'health': u'275',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/30/O-FlyingFox.jpg/revision/latest/scale-to-width-down/210?cb=20150130225731',
+ 'name': u'flying fox',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'life sap 2',
+ 'skill3': u'ravage 3',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Neander_Tauro>
+{'attack': u'95',
+ 'cost': u'3',
+ 'faction': u'neander',
+ 'health': u'365',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/7/75/Neander_Tauro.jpg/revision/latest/scale-to-width-down/210?cb=20150623031736',
+ 'name': u'neander tauro',
+ 'rating': 1,
+ 'role': u'fighter',
+ 'skill1': u'anti-human',
+ 'skill2': u'ravage 2',
+ 'skill3': u'counter 3',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dusk_Huntress>
+{'attack': u'364',
+ 'cost': u'21',
+ 'faction': u'mortii',
+ 'health': u'1211',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/7/76/Screenshot_2015-10-28-18-37-46.png/revision/latest/scale-to-width-down/220?cb=20151029084759',
+ 'name': u'dusk huntress',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'reflect 10',
+ 'skill2': u'dodge 9',
+ 'skill3': u'delay 4',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lich_Lord>
+{'attack': u'376',
+ 'cost': u'21',
+ 'faction': u'mortii',
+ 'health': u'1335',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/b/b7/Lich_Lord_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160203145054',
+ 'name': u'lich lord',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'rebirth 7',
+ 'skill3': u'souleater 8',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lilith> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Chiroptera>
+{'attack': u'422',
+ 'cost': u'22',
+ 'faction': u'mortii',
+ 'health': u'1233',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/6/6c/Chiroptera_backdrop.png/revision/latest/scale-to-width-down/210?cb=20160221093456',
+ 'name': u'chiroptera',
+ 'rating': 5,
+ 'role': u'tank',
+ 'skill1': u'frost armor 7',
+ 'skill2': u'shatter soul',
+ 'skill3': u'swordplay',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pisces> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Gemini_(creature)> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Lord_Bones> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Death%27s_Angel> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Killer_Queen> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Snow_Harlot> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lilith>
+{'attack': u'387',
+ 'cost': u'19',
+ 'faction': u'mortii',
+ 'health': u'1285',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/32/Lilith_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151117171708',
+ 'name': u'lilith',
+ 'rating': 5,
+ 'role': u'hero-killer',
+ 'skill1': u'discord 7',
+ 'skill2': u'shatter soul',
+ 'skill3': u'godswill 9',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Phantom_Liege> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pisces>
+{'attack': u'302',
+ 'cost': u'20',
+ 'faction': u'mortii',
+ 'health': u'1152',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/1/1d/Pisces_backdrop.png/revision/latest/scale-to-width-down/227?cb=20151119172808',
+ 'name': u'pisces',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'immunity 7',
+ 'skill2': u'rebirth 9',
+ 'skill3': u'mind fog',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Gemini_(creature)>
+{'attack': None,
+ 'cost': u'19',
+ 'faction': u'mortii',
+ 'health': None,
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/7/70/Gemini_creature_card.png/revision/latest?cb=20151110232836',
+ 'name': u'gemini',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'pyre 10',
+ 'skill2': u'tempest 10',
+ 'skill3': u'double trouble',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Jormungand> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Lord_Bones>
+{'attack': u'512',
+ 'cost': u'21',
+ 'faction': u'mortii',
+ 'health': u'1045',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/9/95/Lord_Bones_creature_card_base_stats.png/revision/latest?cb=20160119153434',
+ 'name': u'lord bones',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'rebirth 7',
+ 'skill2': u'battleblow 5',
+ 'skill3': u'soul snatch 8',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Magmus> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Death%27s_Angel>
+{'attack': u'265',
+ 'cost': u'21',
+ 'faction': u'mortii',
+ 'health': u'1267',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/6/64/M-DeathsAngel.jpg/revision/latest/scale-to-width-down/210?cb=20150307172455',
+ 'name': u"death's angel",
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'[d]instakill',
+ 'skill2': u'[s]disposal',
+ 'skill3': u'rebirth 8',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Killer_Queen>
+{'attack': u'245',
+ 'cost': u'19',
+ 'faction': u'mortii',
+ 'health': u'1157',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/a9/M-KillerQueen.jpg/revision/latest/scale-to-width-down/210?cb=20150206203425',
+ 'name': u'killer queen',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'soul swap 10',
+ 'skill2': u'shatter soul',
+ 'skill3': u'guilt',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Snow_Harlot>
+{'attack': u'325',
+ 'cost': u'19',
+ 'faction': u'mortii',
+ 'health': u'1150',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/b/b4/Snow_Harlot_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151117170819',
+ 'name': u'snow harlot',
+ 'rating': 5,
+ 'role': u'caster',
+ 'skill1': u'mass heal 9',
+ 'skill2': u'tempest 8',
+ 'skill3': u'ice coffin',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Phantom_Liege>
+{'attack': u'363',
+ 'cost': u'18',
+ 'faction': u'mortii',
+ 'health': u'1275',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/ca/M-PhantomLiege.jpg/revision/latest/scale-to-width-down/210?cb=20150130223633',
+ 'name': u'phantom liege',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'sweeping blow',
+ 'skill2': u'seals',
+ 'skill3': u'life sap 8',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Jormungand>
+{'attack': u'478',
+ 'cost': u'19',
+ 'faction': u'mortii',
+ 'health': u'1535',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/c7/Capture.PNG/revision/latest/scale-to-width-down/210?cb=20151028130100',
+ 'name': u'jormungand',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'stoneskin',
+ 'skill2': u'reflect 10',
+ 'skill3': u'dispel 9',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Revenant_(5-Star_Version)> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Magmus>
+{'attack': u'350',
+ 'cost': u'17',
+ 'faction': u'mortii',
+ 'health': u'1349',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/cf/IMG_20150128_155845_8441.jpg/revision/latest/scale-to-width-down/210?cb=20150128200505',
+ 'name': u'magmus',
+ 'rating': 5,
+ 'role': '',
+ 'skill1': u'battleblow',
+ 'skill2': u'rip',
+ 'skill3': u'immunity 8',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Undying_Will> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bloodletter> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Spirit_Siren> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Terror_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pit_Dragon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Revenant_(5-Star_Version)>
+{'attack': u'325',
+ 'cost': u'17',
+ 'faction': u'mortii',
+ 'health': u'1358',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/4/45/M-Revenant-5-Star.jpg/revision/latest/scale-to-width-down/210?cb=20150130223832',
+ 'name': u'revenant',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'assassin',
+ 'skill2': u'picking off 8',
+ 'skill3': u'retreat',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Death_Knight> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dahlia> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Undying_Will>
+{'attack': u'354',
+ 'cost': u'16',
+ 'faction': u'mortii',
+ 'health': u'1280',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/38/M-UndyingWill.jpg/revision/latest/scale-to-width-down/210?cb=20150130223949',
+ 'name': u'undying will',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'blaze 7',
+ 'skill2': u'rebirth 5',
+ 'skill3': u'instakill',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bloodletter>
+{'attack': u'381',
+ 'cost': u'16',
+ 'faction': u'mortii',
+ 'health': u'1410',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/d/dd/M-Bloodletter.jpg/revision/latest/scale-to-width-down/210?cb=20150130222948',
+ 'name': u'bloodletter',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'life sap 6',
+ 'skill2': u'tit for tat 7',
+ 'skill3': u'stoneskin',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Spirit_Siren>
+{'attack': u'310',
+ 'cost': u'16',
+ 'faction': u'mortii',
+ 'health': u'1204',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/63/M-SpiritSiren.jpg/revision/latest/scale-to-width-down/210?cb=20150130223859',
+ 'name': u'spirit siren',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'curse 6',
+ 'skill3': u'seals',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Terror_Dragon>
+{'attack': u'364',
+ 'cost': u'15',
+ 'faction': u'mortii',
+ 'health': u'1290',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/d/da/Terror_Dragon_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160325101850',
+ 'name': u'terror dragon',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'assassin',
+ 'skill2': u'stoneskin',
+ 'skill3': u'reflect 8',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pit_Dragon>
+{'attack': u'275',
+ 'cost': u'15',
+ 'faction': u'mortii',
+ 'health': u'1350',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/8/83/Pit_Dragon_Creature_card.png/revision/latest/scale-to-width-down/210?cb=20151115194919',
+ 'name': u'pit dragon',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'rebirth 6',
+ 'skill2': u'unbound',
+ 'skill3': u'bullseye',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Death_Knight>
+{'attack': u'360',
+ 'cost': u'15',
+ 'faction': u'mortii',
+ 'health': u'1125',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/6d/Death_Knight_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160317200316',
+ 'name': u'death knight',
+ 'rating': 5,
+ 'role': u'fighter',
+ 'skill1': u'ambush 8',
+ 'skill2': u'assassinate 10',
+ 'skill3': u'rebirth 8',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dahlia>
+{'attack': u'232',
+ 'cost': u'14',
+ 'faction': u'mortii',
+ 'health': u'1155',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/c/cc/M-Dahlia.jpg/revision/latest/scale-to-width-down/210?cb=20150130223053',
+ 'name': u'dahlia',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'sacrifice 6',
+ 'skill3': u'curse 8',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pit_Minion> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Thalassa> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Necrotic_Naga> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bloody_Baron> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Manticore> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Gorgon> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Pit_Priest> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Wild_Efreet> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pit_Minion>
+{'attack': u'195',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'567',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/4/4d/PitMinionCard.jpg/revision/latest?cb=20150301182158',
+ 'name': u'pit minion',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'lock-down',
+ 'skill2': u'soul swap 5',
+ 'skill3': u'bane 5',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Thalassa>
+{'attack': u'240',
+ 'cost': u'14',
+ 'faction': u'mortii',
+ 'health': u'1325',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/7/7d/M-Thalassa.jpg/revision/latest/scale-to-width-down/210?cb=20150130223925',
+ 'name': u'thalassa',
+ 'rating': 5,
+ 'role': u'support',
+ 'skill1': u'bane 6',
+ 'skill2': u'death march 7',
+ 'skill3': u'recycle 1',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Night_Terror> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Necrotic_Naga>
+{'attack': u'184',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'700',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/a/af/Necrotic_Naga.jpg/revision/latest/scale-to-width-down/210?cb=20150623060530',
+ 'name': u'necrotic naga',
+ 'rating': 3,
+ 'role': u'lock-down',
+ 'skill1': u'anti faen',
+ 'skill2': u'dodge 2',
+ 'skill3': u'bane 6',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Frost_Caller> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bloody_Baron>
+{'attack': u'171',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'723',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/55/Bloody_Baron.jpg/revision/latest/scale-to-width-down/210?cb=20150623060333',
+ 'name': u'bloody baron',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'counter 4',
+ 'skill2': u'life sap 7',
+ 'skill3': u'death march 5',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bone_Mage> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Manticore>
+{'attack': u'160',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'575',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/69/M-Manticore.jpg/revision/latest/scale-to-width-down/210?cb=20150130223527',
+ 'name': u'manticore',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'cloudburst 4',
+ 'skill2': u'rebirth 5',
+ 'skill3': u'bullseye',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blightghast> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Gorgon>
+{'attack': u'285',
+ 'cost': u'14',
+ 'faction': u'mortii',
+ 'health': u'1277',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/59/M-Gorgon.jpg/revision/latest/scale-to-width-down/210?cb=20150130223334',
+ 'name': u'gorgon',
+ 'rating': 5,
+ 'role': u'special',
+ 'skill1': u'hero-killer',
+ 'skill2': u'curse 7',
+ 'skill3': u'delay 3',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Pit_Priest>
+{'attack': u'295',
+ 'cost': u'12 (15)',
+ 'faction': u'mortii',
+ 'health': u'1252',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/0/03/Pit_Priest_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160130115437',
+ 'name': u'pit priest',
+ 'rating': 4,
+ 'role': '',
+ 'skill1': u'blaze 4',
+ 'skill2': u'restoration 6',
+ 'skill3': u'reflect 5',
+ 'timer': u'6'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Wild_Efreet>
+{'attack': u'166',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'615',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/be/Wild_Efreet_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160207122634',
+ 'name': u'wild efreet',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'flaming 6',
+ 'skill2': u'detonate 6',
+ 'skill3': u'[d]pyre bomb 6',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dark_Assassin> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Night_Terror>
+{'attack': u'235',
+ 'cost': u'11',
+ 'faction': u'mortii',
+ 'health': u'648',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/9/96/M-NightTerror.jpg/revision/latest/scale-to-width-down/210?cb=20150130223611',
+ 'name': u'night terror',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'[s]hobble 2',
+ 'skill2': u'bane 7',
+ 'skill3': u'reflect 6',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Frost_Caller>
+{'attack': u'146',
+ 'cost': u'10',
+ 'faction': u'mortii',
+ 'health': u'553',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/c/c8/M-FrostCaller.jpg/revision/latest/scale-to-width-down/210?cb=20150130223257',
+ 'name': u'frost caller',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'frostbite 3',
+ 'skill3': u'curse 5',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bone_Mage>
+{'attack': u'122',
+ 'cost': u'10',
+ 'faction': u'mortii',
+ 'health': u'520',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/4/4f/Bone_Mage.jpg/revision/latest/scale-to-width-down/210?cb=20150623052513',
+ 'name': u'bone mage',
+ 'rating': 3,
+ 'role': u'caster',
+ 'skill1': u'meteor 4',
+ 'skill2': u'(d)pyre bomb 4',
+ 'skill3': u'rebirth 7',
+ 'timer': u'2'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blightghast>
+{'attack': u'255',
+ 'cost': u'10',
+ 'faction': u'mortii',
+ 'health': u'855',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/c/cf/Blightghast.jpg/revision/latest/scale-to-width-down/210?cb=20150623052222',
+ 'name': u'blightghast',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'anti faen',
+ 'skill2': u'bane 6',
+ 'skill3': u'plague 6',
+ 'timer': u'4'}
+2016-08-29 20:00:42 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dark_Gargoyle> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:42 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dark_Assassin>
+{'attack': u'165',
+ 'cost': u'10',
+ 'faction': u'mortii',
+ 'health': u'608',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/b/b0/M-DarkAssassin.jpg/revision/latest/scale-to-width-down/210?cb=20150130223101',
+ 'name': u'dark assassin',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'dodge 3',
+ 'skill2': u'ambush 3',
+ 'skill3': u'battleblow 7',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Evil_Eye> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Haunted_Idol> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Plaguebringer> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Dark_Witch> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dark_Gargoyle>
+{'attack': u'182',
+ 'cost': u'9',
+ 'faction': u'mortii',
+ 'health': u'728',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/3/3e/Dark_Gargoyle_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160123135546',
+ 'name': u'dark gargoyle',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'ambush 2',
+ 'skill2': u'reflect 2',
+ 'skill3': u'restoration5',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Llorona> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Imp_Lord> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/The_Unseen> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Evil_Eye>
+{'attack': u'215',
+ 'cost': u'9',
+ 'faction': u'mortii',
+ 'health': u'675',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/6/63/EvilEyeCard.jpg/revision/latest?cb=20150301182905',
+ 'name': u'evil eye',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'contagion 6',
+ 'skill2': u'bane 6',
+ 'skill3': u'assassinate 7',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Demona> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Haunted_Idol>
+{'attack': u'166',
+ 'cost': u'8',
+ 'faction': u'mortii',
+ 'health': u'522',
+ 'image': u'http://vignette1.wikia.nocookie.net/deck-heroes/images/a/a4/Haunted_Idol_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160114145649',
+ 'name': u'haunted idol',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'block 3',
+ 'skill2': u'reflect 2',
+ 'skill3': u'restoration 4',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Flesheater> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Plaguebringer>
+{'attack': u'100',
+ 'cost': u'8',
+ 'faction': u'mortii',
+ 'health': u'411',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/d/dc/Plaguebringer.jpg/revision/latest/scale-to-width-down/210?cb=20150623051451',
+ 'name': u'plaguebringer',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'ice arrow 3',
+ 'skill2': u'plague 2',
+ 'skill3': u'clouburst 4',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Dark_Witch>
+{'attack': u'180',
+ 'cost': u'10',
+ 'faction': u'mortii',
+ 'health': u'648',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/1/15/M-DarkWitch.jpg/revision/latest/scale-to-width-down/210?cb=20150130223130',
+ 'name': u'dark witch',
+ 'rating': 3,
+ 'role': u'support',
+ 'skill1': u'hero-killer',
+ 'skill2': u'voodoo 8',
+ 'skill3': u'unholy pact 5',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Blooddrinker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Llorona>
+{'attack': u'135',
+ 'cost': u'8',
+ 'faction': u'mortii',
+ 'health': u'413',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/a/ae/M-Revenant-2-Star.jpg/revision/latest/scale-to-width-down/210?cb=20150130223817',
+ 'name': u'llorona',
+ 'rating': 2,
+ 'role': u'caster',
+ 'skill1': u'hero-killer',
+ 'skill2': u'bolt 3',
+ 'skill3': u'curse 4',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Burnt_Fiend> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Imp_Lord>
+{'attack': u'171',
+ 'cost': u'9',
+ 'faction': u'mortii',
+ 'health': u'694',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/a/a5/Imp_Lord_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160118064203',
+ 'name': u'imp lord',
+ 'rating': 3,
+ 'role': '',
+ 'skill1': u'bolt 5',
+ 'skill2': u'afflict 4',
+ 'skill3': u'meteor 7',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/The_Unseen>
+{'attack': u'231',
+ 'cost': u'9',
+ 'faction': u'mortii',
+ 'health': u'618',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/f/fd/The_unseen_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151111122800',
+ 'name': u'the unseen',
+ 'rating': 3,
+ 'role': u'fighter',
+ 'skill1': u'hero-killer',
+ 'skill2': u'[d]voodoo 4',
+ 'skill3': u'typhoon 3',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Demona>
+{'attack': u'144',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'455',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/8/84/Demona_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160409164942',
+ 'name': u'demona',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'dodge 2',
+ 'skill2': u'gas cloud 3',
+ 'skill3': u'frostbite 5',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Flesheater>
+{'attack': u'105',
+ 'cost': u'7',
+ 'faction': u'mortii',
+ 'health': u'443',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/3c/Flesheater.jpg/revision/latest/scale-to-width-down/210?cb=20150623051011',
+ 'name': u'flesheater',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'meteor 2',
+ 'skill2': u'ice arrow 4',
+ 'skill3': u'bane 7',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nightmare> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Blooddrinker>
+{'attack': u'143',
+ 'cost': u'7',
+ 'faction': u'mortii',
+ 'health': u'480',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/3/35/Blooddrinker_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160115170931',
+ 'name': u'blooddrinker',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'life sap 5',
+ 'skill2': u'soul swap 5',
+ 'skill3': u'death march 3',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Burnt_Fiend>
+{'attack': u'140',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'391',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/7/74/Burnt_Fiend.jpg/revision/latest/scale-to-width-down/210?cb=20150623050750',
+ 'name': u'burnt fiend',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'bane 3',
+ 'skill2': u'flaming 3',
+ 'skill3': u'(d)backdraft',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Imp> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nightmare>
+{'attack': u'126',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'520',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/0/06/Nightmare_creature_card.png/revision/latest/scale-to-width-down/210?cb=20151126083214',
+ 'name': u'nightmare',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'injured 3',
+ 'skill2': u'ambush 3',
+ 'skill3': u'battleblow 6',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Bony_Fiend> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Imp>
+{'attack': u'80',
+ 'cost': u'4',
+ 'faction': u'mortii',
+ 'health': u'275',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/3/3c/M-Imp.jpg/revision/latest/scale-to-width-down/210?cb=20150130223441',
+ 'name': u'imp',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'meteor 2',
+ 'skill2': u'bane 4',
+ 'skill3': u'meteor 4',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Nosferatu> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Zombie_King> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Bony_Fiend>
+{'attack': u'85',
+ 'cost': u'4',
+ 'faction': u'mortii',
+ 'health': u'258',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/c/c4/Bony_Fiend_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160119170213',
+ 'name': u'bony fiend',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'bane 1',
+ 'skill2': u'bloodlust 2',
+ 'skill3': u'rebirth 2',
+ 'timer': u'2'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Banshee> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Nosferatu>
+{'attack': u'100',
+ 'cost': u'3',
+ 'faction': u'mortii',
+ 'health': u'395',
+ 'image': u'http://vignette2.wikia.nocookie.net/deck-heroes/images/2/28/Nosferatu_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160409171436',
+ 'name': u'nosferatu',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'block 1',
+ 'skill2': u'afflict 1',
+ 'skill3': u'rebirth 4',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Zombie_King>
+{'attack': u'120',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'548',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/5b/M-ZombieKing.jpg/revision/latest/scale-to-width-down/210?cb=20150130224019',
+ 'name': u'zombie king',
+ 'rating': 2,
+ 'role': '',
+ 'skill1': u'bane 4',
+ 'skill2': u'counter 3',
+ 'skill3': u'reflect 3',
+ 'timer': u'4'}
+2016-08-29 20:00:43 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Banshee>
+{'attack': u'90',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'330',
+ 'image': u'http://vignette4.wikia.nocookie.net/deck-heroes/images/b/be/Banshee_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160118141714',
+ 'name': u'banshee',
+ 'rating': 1,
+ 'role': '',
+ 'skill1': u'afflict 2',
+ 'skill2': u'anger 2',
+ 'skill3': u'life sap 6',
+ 'timer': u'2'}
+2016-08-29 20:00:44 [scrapy] DEBUG: Crawled (200) <GET http://deck-heroes.wikia.com/wiki/Shadowstalker> (referer: http://deck-heroes.wikia.com/wiki/Creatures)
+2016-08-29 20:00:44 [scrapy] DEBUG: Scraped from <200 http://deck-heroes.wikia.com/wiki/Shadowstalker>
+{'attack': u'125',
+ 'cost': u'5',
+ 'faction': u'mortii',
+ 'health': u'390',
+ 'image': u'http://vignette3.wikia.nocookie.net/deck-heroes/images/5/50/Shadowstalker_creature_card.png/revision/latest/scale-to-width-down/210?cb=20160115131054',
+ 'name': u'shadowstalker',
+ 'rating': 2,
+ 'role': u'food',
+ 'skill1': u'assassinate 4',
+ 'skill2': u'rebirth 3',
+ 'skill3': u'stabthrough 6',
+ 'timer': u'4'}
+2016-08-29 20:00:44 [scrapy] INFO: Closing spider (finished)
+2016-08-29 20:00:44 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 114921,
+ 'downloader/request_count': 284,
+ 'downloader/request_method_count/GET': 284,
+ 'downloader/response_bytes': 8463082,
+ 'downloader/response_count': 284,
+ 'downloader/response_status_count/200': 284,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 8, 29, 18, 0, 44, 188162),
+ 'item_scraped_count': 283,
+ 'log_count/DEBUG': 568,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 284,
+ 'scheduler/dequeued': 284,
+ 'scheduler/dequeued/memory': 284,
+ 'scheduler/enqueued': 284,
+ 'scheduler/enqueued/memory': 284,
+ 'start_time': datetime.datetime(2016, 8, 29, 18, 0, 33, 592114)}
+2016-08-29 20:00:44 [scrapy] INFO: Spider closed (finished)
